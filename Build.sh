@@ -46,7 +46,7 @@ sudo apt-get update
 sudo apt-get install -y cloudflared
 
 echo "🔧 Configuring SSH on custom port $port..."
-if ! grep -q "^Port $port" /etc/ssh/sshd_config; then
+if ! grep -q "\nPort $port" /etc/ssh/sshd_config; then
   echo "Port $port" | sudo tee -a /etc/ssh/sshd_config
 else
   echo "✅ Port $port đã tồn tại trong sshd_config"
