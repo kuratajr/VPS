@@ -38,18 +38,25 @@ sudo apt-get upgrade -y
 
 echo "🔐 Setting up Cloudflare repository..."
 sudo mkdir -p --mode=0755 /usr/share/keyrings
-curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
-echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share>
+echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloud>
 
 echo "📦 Installing cloudflared..."
 sudo apt-get update
 sudo apt-get install -y cloudflared
 
+
 echo "🔧 Configuring SSH on custom port $port..."
-if ! grep -q "^Port $port" /etc/ssh/sshd_config; then
-  echo "\nPort $port" | sudo tee -a /etc/ssh/sshd_config
+sudo sed -i -E "/^\s*Port\s+[0-9]+/ {
+  /$port\b/! s/^/#/
+}" /etc/ssh/sshd_config
+
+if grep -qE "^\s*Port\s+$port\b" /etc/ssh/sshd_config; then
+  echo "✅ Port $port đã tồn tại và đang được sử dụng."
 else
-  echo "✅ Port $port đã tồn tại trong sshd_config"
+  echo "" | sudo tee -a /etc/ssh/sshd_config >/dev/null
+  echo "Port $port" | sudo tee -a /etc/ssh/sshd_config
+  echo "✅ Đã thêm dòng Port $port vào sshd_config."
 fi
 
 echo "🛠️ Enabling and restarting SSH service..."
