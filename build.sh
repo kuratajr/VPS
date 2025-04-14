@@ -37,14 +37,14 @@ echo "⬆️ Upgrading existing packages..."
 sudo apt-get upgrade -y
 
 echo "🔐 Setting up Cloudflare repository..."
+# Add cloudflare gpg key
 sudo mkdir -p --mode=0755 /usr/share/keyrings
-curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share>
-echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloud>
+curl -fsSL https://pkg.cloudflare.com/cloudflare-main.gpg | sudo tee /usr/share/keyrings/cloudflare-main.gpg >/dev/null
+# Add this repo to your apt repositories
+echo 'deb [signed-by=/usr/share/keyrings/cloudflare-main.gpg] https://pkg.cloudflare.com/cloudflared any main' | sudo tee /etc/apt/sources.list.d/cloudflared.list
 
-echo "📦 Installing cloudflared..."
-sudo apt-get update
-sudo apt-get install -y cloudflared
-
+# install cloudflared
+sudo apt-get update && sudo apt-get install cloudflared
 
 echo "🔧 Configuring SSH on custom port $port..."
 sudo sed -i -E "/^\s*Port\s+[0-9]+/ {
