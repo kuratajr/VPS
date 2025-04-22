@@ -64,6 +64,17 @@ sudo systemctl unmask ssh
 sudo systemctl enable ssh
 sudo systemctl restart ssh
 
+echo "🛠️ Enabling and restarting docker service..."
+sudo systemctl unmask docker.service
+sudo systemctl unmask docker.socket
+sudo systemctl unmask containerd
+
+sudo systemctl start docker
+sudo systemctl start containerd
+
+sudo systemctl enable docker
+sudo systemctl enable containerd
+
 echo "🔑 Installing cloudflared service with token..."
 sudo cloudflared service install "$token"
 
