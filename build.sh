@@ -69,6 +69,23 @@ sudo systemctl unmask docker.service
 sudo systemctl unmask docker.socket
 sudo systemctl unmask containerd
 
+# Kiểm tra nếu tệp daemon.json đã tồn tại
+if [ ! -f /etc/docker/daemon.json ]; then
+  echo "Tệp /etc/docker/daemon.json không tồn tại, đang tạo tệp mới..."
+
+  # Tạo thư mục nếu chưa tồn tại
+  sudo mkdir -p /etc/docker
+
+  # Tạo tệp daemon.json và cấu hình "data-root"
+  echo '{
+    "data-root": "/home/user/docker" 
+  }' | sudo tee /etc/docker/daemon.json > /dev/null
+  
+  echo "Tệp /etc/docker/daemon.json đã được tạo và cấu hình!"
+else
+  echo "Tệp /etc/docker/daemon.json đã tồn tại, không cần tạo lại."
+fi
+
 sudo systemctl start docker
 sudo systemctl start containerd
 
