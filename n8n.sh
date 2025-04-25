@@ -94,7 +94,46 @@ sudo systemctl enable containerd
 
 echo "🔑 Installing cloudflared service with token..."
 # sudo cloudflared service install "$token"
-sudo ./cloudflared-multin8n.sh
+
+# ==== Config ====
+TUNNEL_NAME="multin8n"
+CLOUDFLARED_PATH=$(which cloudflared)
+SERVICE_NAME="cloudflared-$TUNNEL_NAME"
+WORKDIR="/home/user/.cloudflared"
+TUNNEL_FILE="$WORKDIR/$TUNNEL_NAME.json"
+
+# ==== Create systemd service ====
+echo "✅ Creating systemd service for tunnel: $TUNNEL_NAME"
+
+cat <<EOF | sudo tee /etc/systemd/system/$SERVICE_NAME.service > /dev/null
+[Unit]
+Description=Cloudflared Tunnel: $TUNNEL_NAME
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=$CLOUDFLARED_PATH tunnel run $TUNNEL_NAME
+Restart=always
+RestartSec=5
+User=user
+WorkingDirectory=$WORKDIR
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+EOF
+ ==== Enable + start ====
+echo "🔄 Reloading systemd & enabling service..."
+sudo systemctl daemon-reload
+sudo systemctl enable $SERVICE_NAME
+sudo systemctl start $SERVICE_NAME
+
+# ==== Status ====
+echo "🔍 Tunnel service status:"
+sudo systemctl status $SERVICE_NAME --no-pager
+
+
 echo "🎨 Installing neofetch..."
 sudo apt-get install -y neofetch
 
