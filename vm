@@ -1,60 +1,34 @@
 #!/bin/bash
 TARGET="/home/user/myapp/.idx/dev.nix"
-RUN_VM_DIR="/home/user/myapp/vm/run_vm.sh"
-VM_DIR="/home/user/myapp/vm"   # Thư mục cần giữ lại
-
-# Tạo thư mục nếu chưa tồn tại
+RUN_VM_DIR="/home/run_vm.sh"
+VM_DIR="/home/user/myapp/vm"
 mkdir -p "$(dirname "$TARGET")"
 mkdir -p "$(dirname "$RUN_VM_DIR")"
-
-# Tạo script
 cat << 'EOF' > "$RUN_VM_DIR"
 #!/bin/bash
 echo "Checking qemu-kvm..."
-nix-shell -p qemu_kvm --run "qemu-kvm --version" || { 
-    echo "Error running qemu-kvm via nix-shell. Exiting..."; 
-    exit 1; 
-}
-
+nix-shell -p qemu_kvm --run "qemu-kvm --version" || { echo "Error running qemu-kvm via nix-shell. Exiting..."; exit 1; }
 echo "Stopping running VMs..."
 ps -eo pid,comm,args | grep '[q]emu-system' | awk '{print $1}' | xargs -r kill -9
 killall adb 2>/dev/null || pkill -f adb
-
 echo "Starting cleanup of /home..."
 KEEP1="/home/user/myapp/.idx/dev.nix"
 KEEP2="/home/user/myapp/vm/check.ok"
-KEEP3="/home/user/myapp/vm"     # Giữ lại toàn bộ thư mục vm
-
-# Nếu `check.ok` chưa tồn tại, tiến hành dọn dẹp
+KEEP3="/home/user/myapp/vm" 
 if [ ! -f "$KEEP2" ]; then
 echo "$KEEP2 does not exist. Proceeding to clean /home (except $KEEP1 and $KEEP3)..."
-
-# Backup các file cần giữ lại
 [ -f "$KEEP1" ] && cp "$KEEP1" /tmp/dev.nix.backup && echo "Backed up $KEEP1"
 [ -d "$KEEP3" ] && cp -r "$KEEP3" /tmp/vm.backup && echo "Backed up $KEEP3"
-
-# Xóa tất cả các file/thư mục không thuộc diện giữ lại
-find /home -mindepth 1 \
-    -path "$(dirname "$KEEP1")" -prune \
-    -o -path "$KEEP3" -prune \
-    -o -exec rm -rf {} +
-
+find /home -mindepth 1 -path "$(dirname "$KEEP1")" -prune -o -path "$KEEP3" -prune -o -exec rm -rf {} +
 echo "Cleaned /home except $(dirname "$KEEP1") and $KEEP3"
-
-# Phục hồi lại các file đã backup
 [ -f /tmp/dev.nix.backup ] && mkdir -p "$(dirname "$KEEP1")" && cp /tmp/dev.nix.backup "$KEEP1" && echo "Restored $KEEP1"
 [ -d /tmp/vm.backup ] && mkdir -p "$(dirname "$KEEP3")" && cp -r /tmp/vm.backup "$KEEP3" && echo "Restored $KEEP3"
-
-# Đặt lại quyền thực thi cho script
 [ -f "$RUN_VM_DIR" ] && chmod +x "$RUN_VM_DIR"
-
-# Đánh dấu đã hoàn thành cleanup
 touch "$KEEP2"
 echo "Created $KEEP2"
 else
 echo "$KEEP2 already exists. Skipping cleanup."
 fi
-# Cấp quyền thực thi cho script
 chmod +x "$RUN_VM_DIR"
 echo "Installing necessary packages..."
 nix-env -iA nixpkgs.unzip nixpkgs.python3 nixpkgs.git nixpkgs.axel nixpkgs.curl nixpkgs.lsb-release nixpkgs.gnupg nixpkgs.gzip
