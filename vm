@@ -58,8 +58,8 @@ else
 echo "windows2022.raw >= 46G, no resize needed."
 fi
 echo "Downloading OVMF.fd from Clear Linux..."
-curl -L -o /home/user/myapp/vm/OVMF.fd https://github.com/clearlinux/common/raw/refs/heads/master/OVMF.fd || { echo "Failed to download OVMF.fd"; exit 1; }
-chmod 644 /home/user/myapp/vm/OVMF.fd
+curl -L -o /home/user/myapp/OVMF.fd https://github.com/clearlinux/common/raw/refs/heads/master/OVMF.fd || { echo "Failed to download OVMF.fd"; exit 1; }
+chmod 644 /home/user/myapp/OVMF.fd
 echo "user: administrator" > /home/user/myapp/readme.txt
 echo "pass: Datnguyentv.com" >> /home/user/myapp/readme.txt
 echo "script by fb.com/thoai.ngoxuan" >> /home/user/myapp/readme.txt
@@ -86,7 +86,7 @@ nohup qemu-kvm \
 -device virtio-rng-pci \
 -enable-kvm \
 -hda '"$raw_path"' \
--drive if=pflash,format=raw,readonly=off,file=./OVMF.fd \
+-drive if=pflash,format=raw,readonly=off,file=/home/user/myapp/OVMF.fd \
 -uuid e47ddb84-fb4d-46f9-b531-14bb15156336 \
 -vnc :0 > /dev/null 2>&1
 echo "VM started in the background."
