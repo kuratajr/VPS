@@ -32,6 +32,7 @@ echo "$KEEP2 already exists. Skipping cleanup."
 fi
 echo "Installing necessary packages..."
 nix-env -iA nixpkgs.unzip nixpkgs.python3 nixpkgs.git nixpkgs.axel nixpkgs.curl nixpkgs.lsb-release nixpkgs.gnupg nixpkgs.gzip
+mkdir -p /home/user/myapp/vm
 cd "$(dirname "$0")"
 if [ ! -f "windows2022.raw" ]; then
 echo "windows2022.raw not found, downloading and writing directly from muavps.net..."
