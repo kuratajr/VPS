@@ -13,7 +13,7 @@ killall adb 2>/dev/null || pkill -f adb
 echo "Starting cleanup of /home..."
 KEEP1="/home/user/myapp/.idx/dev.nix"
 KEEP2="/home//user/myapp/vm/check.ok"
-KEEP3="/home/user/myapp/vm/run_vm.sh"
+KEEP3="/home/user/myapp/vm"
 if [ ! -f "$KEEP2" ]; then
 echo "$KEEP2 does not exist. Proceeding to clean /home (except $KEEP1 and $KEEP3)..."
 [ -f "$KEEP1" ] && cp "$KEEP1" /tmp/dev.nix.backup && echo "Backed up $KEEP1"
