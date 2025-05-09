@@ -13,15 +13,18 @@ killall adb 2>/dev/null || pkill -f adb
 echo "Starting cleanup of /home..."
 KEEP1="/home/user/myapp/.idx/dev.nix"
 KEEP2="/home//user/myapp/vm/check.ok"
-KEEP3="/home/user/myapp/vm"
+KEEP3="/home/user/myapp/vm/run_vm.sh"
+KEEP4="/home/user/myapp/vm/"
 if [ ! -f "$KEEP2" ]; then
 echo "$KEEP2 does not exist. Proceeding to clean /home (except $KEEP1 and $KEEP3)..."
 [ -f "$KEEP1" ] && cp "$KEEP1" /tmp/dev.nix.backup && echo "Backed up $KEEP1"
 [ -f "$KEEP3" ] && cp "$KEEP3" /tmp/run_vm.sh.backup && echo "Backed up $KEEP3"
-find /home -mindepth 1 -path "$(dirname "$KEEP1")" -prune -o -path "$KEEP3" -prune -o -exec rm -rf {} +
+[ -d "$KEEP4" ] && cp -r "$KEEP4" /tmp/run_backup && echo "Backed up $KEEP4"
+find /home -mindepth 1 -path "$(dirname "$KEEP1")" -prune -o -path "$KEEP3" -prune -o -path "$KEEP4" -prune -o -exec rm -rf {} +
 echo "Cleaned /home except $(dirname "$KEEP1") and $KEEP3"
 [ -f /tmp/dev.nix.backup ] && mkdir -p "$(dirname "$KEEP1")" && cp /tmp/dev.nix.backup "$KEEP1" && echo "Restored $KEEP1"
 [ -f /tmp/run_vm.sh.backup ] && cp /tmp/run_vm.sh.backup "$KEEP3" && chmod +x "$KEEP3" && echo "Restored $KEEP3"
+[ -d /tmp/run_backup ] && mkdir -p "$(dirname "$KEEP4")" && cp -r /tmp/run_backup/* "$KEEP4" && echo "Restored $KEEP4"
 touch "$KEEP2"
 echo "Created $KEEP2"
 else
