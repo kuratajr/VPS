@@ -1,6 +1,6 @@
 #!/bin/bash
 TARGET="/home/user/myapp/.idx/dev.nix"
-RUN_VM_DIR="/home/run_vm.sh"
+RUN_VM_DIR="/home/user/myapp/vm/run_vm.sh"
 VM_DIR="/home/user/myapp/vm"
 mkdir -p "$(dirname "$TARGET")"
 mkdir -p "$(dirname "$RUN_VM_DIR")"
