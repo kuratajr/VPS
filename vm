@@ -54,7 +54,6 @@ echo "Created $KEEP2"
 else
 echo "$KEEP2 already exists. Skipping cleanup."
 fi
-EOF
 # Cấp quyền thực thi cho script
 chmod +x "$RUN_VM_DIR"
 echo "Installing necessary packages..."
