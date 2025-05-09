@@ -1,0 +1,130 @@
+#!/bin/bash
+TARGET="/home/user/myapp/.idx/dev.nix"
+RUN_VM_DIR="/home/user/myapp/vm/run_vm.sh"
+mkdir -p "$(dirname "$TARGET")"
+mkdir -p "$(dirname "$RUN_VM_DIR")"
+cat << 'EOF' > "$RUN_VM_DIR"
+#!/bin/bash
+echo "Checking qemu-kvm..."
+nix-shell -p qemu_kvm --run "qemu-kvm --version" || { echo "Error running qemu-kvm via nix-shell. Exiting..."; exit 1; }
+echo "Stopping running VMs..."
+ps -eo pid,comm,args | grep '[q]emu-system' | awk '{print $1}' | xargs -r kill -9
+killall adb 2>/dev/null || pkill -f adb
+echo "Starting cleanup of /home..."
+KEEP1="/home/user/myapp/.idx/dev.nix"
+KEEP2="/home/check.ok"
+KEEP3="/home/user/myapp/vm/run_vm.sh"
+if [ ! -f "$KEEP2" ]; then
+echo "$KEEP2 does not exist. Proceeding to clean /home (except $KEEP1 and $KEEP3)..."
+[ -f "$KEEP1" ] && cp "$KEEP1" /tmp/dev.nix.backup && echo "Backed up $KEEP1"
+[ -f "$KEEP3" ] && cp "$KEEP3" /tmp/run_vm.sh.backup && echo "Backed up $KEEP3"
+find /home -mindepth 1 -path "$(dirname "$KEEP1")" -prune -o -path "$KEEP3" -prune -o -exec rm -rf {} +
+echo "Cleaned /home except $(dirname "$KEEP1") and $KEEP3"
+[ -f /tmp/dev.nix.backup ] && mkdir -p "$(dirname "$KEEP1")" && cp /tmp/dev.nix.backup "$KEEP1" && echo "Restored $KEEP1"
+[ -f /tmp/run_vm.sh.backup ] && cp /tmp/run_vm.sh.backup "$KEEP3" && chmod +x "$KEEP3" && echo "Restored $KEEP3"
+touch "$KEEP2"
+echo "Created $KEEP2"
+else
+echo "$KEEP2 already exists. Skipping cleanup."
+fi
+echo "Installing necessary packages..."
+nix-env -iA nixpkgs.unzip nixpkgs.python3 nixpkgs.git nixpkgs.axel nixpkgs.curl nixpkgs.lsb-release nixpkgs.gnupg nixpkgs.gzip
+cd "$(dirname "$0")"
+if [ ! -f "windows2022.raw" ]; then
+echo "windows2022.raw not found, downloading and writing directly from muavps.net..."
+cpu_count=$(nproc)
+cpu_name=$(lscpu | grep "Model name" | sed 's/Model name:\s*//')
+ram_total=$(free -h | grep Mem | awk '{print $2}')
+ram_free=$(free -h | grep Mem | awk '{print $4}')
+echo "CPU count: $cpu_count"
+echo "CPU name: $cpu_name"
+echo "Total RAM: $ram_total"
+echo "Free RAM: $ram_free"
+start_time=$(date +%s)
+wget -qO- http://drive.muavps.net/file/Windows2022UEFI.gz | gunzip -c | dd of=/home/user/myapp/vm/windows2022.raw bs=4M &
+pid=$!
+while kill -0 $pid 2>/dev/null; do elapsed_time=$(( $(date +%s) - start_time )); echo -ne "Installing ${elapsed_time}s \r / 300s "; sleep 1; done
+wait $pid
+echo "Installation complete!" || { echo "Error downloading or extracting to windows2022.raw"; exit 1; }
+else
+echo "Found windows2022.raw"
+fi
+raw_path=$(realpath "windows2022.raw")
+current_size=$(qemu-img info "$raw_path" | grep 'virtual size' | awk '{print $3}' | sed 's/G//')
+if [ "$current_size" -lt 45 ]; then
+echo "Resizing windows2022.raw to 45G..."
+qemu-img resize "$raw_path" 46G
+else
+echo "windows2022.raw >= 46G, no resize needed."
+fi
+echo "Downloading OVMF.fd from Clear Linux..."
+curl -L -o OVMF.fd https://github.com/clearlinux/common/raw/refs/heads/master/OVMF.fd || { echo "Failed to download OVMF.fd"; exit 1; }
+chmod 644 ./OVMF.fd
+echo "user: administrator" > /home/user/myapp/readme.txt
+echo "pass: Datnguyentv.com" >> /home/user/myapp/readme.txt
+echo "script by fb.com/thoai.ngoxuan" >> /home/user/myapp/readme.txt
+echo "GZ by datnguyentv" >> /home/user/myapp/readme.txt
+echo "Init ver 2" >> /home/user/myapp/readme.txt
+echo "Starting VM and noVNC..."
+nix-shell -p qemu_kvm -p python3 -p git -p novnc --run '
+git clone https://github.com/novnc/noVNC.git || true
+ln -sf vnc.html ./noVNC/emulator.html
+ln -sf vnc.html ./noVNC/index.html
+./noVNC/utils/novnc_proxy --vnc localhost:5900 --listen 0.0.0.0:8080 &
+nohup qemu-kvm \
+-cpu host,+topoext,hv_relaxed,hv_spinlocks=0x1fff,hv-passthrough,+pae,+nx,kvm=on,+svm \
+-smp 8,cores=8 \
+-M q35,usb=on \
+-device usb-tablet \
+-m 24G \
+-device virtio-balloon-pci \
+-vga virtio \
+-net nic,netdev=n0,model=virtio-net-pci \
+-netdev user,id=n0,hostfwd=tcp::3389-:3389 \
+-boot c \
+-device virtio-serial-pci \
+-device virtio-rng-pci \
+-enable-kvm \
+-hda '"$raw_path"' \
+-drive if=pflash,format=raw,readonly=off,file=./OVMF.fd \
+-uuid e47ddb84-fb4d-46f9-b531-14bb15156336 \
+-vnc :0 > /dev/null 2>&1
+echo "VM started in the background."
+sleep infinity
+'
+EOF
+chmod +x "$RUN_VM_DIR"
+echo "Created run_vm.sh at $RUN_VM_DIR"
+echo "Writing dev.nix content to $TARGET..."
+cat << 'EOF' > "$TARGET"
+{ pkgs, ... }: {
+  channel = "stable-24.05";
+  packages = [
+    pkgs.qemu_kvm
+    pkgs.unzip
+    pkgs.python3
+    pkgs.git
+    pkgs.axel
+    pkgs.curl
+    pkgs.lsb-release
+    pkgs.gnupg
+    pkgs.gzip
+    pkgs.novnc
+  ];
+  env = {};
+  idx = {
+    extensions = [];
+    workspace = {};
+    previews = {
+      enable = true;
+      previews = {
+        web = {
+          command = ["/home/user/myapp/vm/run_vm.sh"];
+          manager = "flutter";
+        };
+      };
+    };
+  };
+}
+EOF
+echo "dev.nix file created successfully at $TARGET"
