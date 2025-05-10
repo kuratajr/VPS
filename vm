@@ -1,7 +1,6 @@
 #!/bin/bash
 TARGET="/home/user/myapp/.idx/dev.nix"
-RUN_VM_DIR="/home/user/myapp/vm/run_vm.sh"
-VM_DIR="/home/user/myapp/vm"
+RUN_VM_DIR="/home/user/run_vm.sh"
 mkdir -p "$(dirname "$TARGET")"
 mkdir -p "$(dirname "$RUN_VM_DIR")"
 cat << 'EOF' > "$RUN_VM_DIR"
@@ -13,23 +12,22 @@ ps -eo pid,comm,args | grep '[q]emu-system' | awk '{print $1}' | xargs -r kill -
 killall adb 2>/dev/null || pkill -f adb
 echo "Starting cleanup of /home..."
 KEEP1="/home/user/myapp/.idx/dev.nix"
-KEEP2="/home/user/myapp/vm/check.ok"
-KEEP3="/home/user/myapp/vm" 
+KEEP2="/home/user/check.ok"
+KEEP3="/home/user/run_vm.sh"
 if [ ! -f "$KEEP2" ]; then
 echo "$KEEP2 does not exist. Proceeding to clean /home (except $KEEP1 and $KEEP3)..."
 [ -f "$KEEP1" ] && cp "$KEEP1" /tmp/dev.nix.backup && echo "Backed up $KEEP1"
-[ -d "$KEEP3" ] && cp -r "$KEEP3" /tmp/vm.backup && echo "Backed up $KEEP3"
+[ -f "$KEEP3" ] && cp "$KEEP3" /tmp/run_vm.sh.backup && echo "Backed up $KEEP3"
 find /home -mindepth 1 -path "$(dirname "$KEEP1")" -prune -o -path "$KEEP3" -prune -o -exec rm -rf {} +
 echo "Cleaned /home except $(dirname "$KEEP1") and $KEEP3"
 [ -f /tmp/dev.nix.backup ] && mkdir -p "$(dirname "$KEEP1")" && cp /tmp/dev.nix.backup "$KEEP1" && echo "Restored $KEEP1"
-[ -d /tmp/vm.backup ] && mkdir -p "$(dirname "$KEEP3")" && cp -r /tmp/vm.backup "$KEEP3" && echo "Restored $KEEP3"
-[ -f "$RUN_VM_DIR" ] && chmod +x "$RUN_VM_DIR"
+[ -f /tmp/run_vm.sh.backup ] && cp /tmp/run_vm.sh.backup "$KEEP3" && chmod +x "$KEEP3" && echo "Restored $KEEP3"
 touch "$KEEP2"
 echo "Created $KEEP2"
 else
 echo "$KEEP2 already exists. Skipping cleanup."
 fi
-chmod +x "$RUN_VM_DIR"
+chmod 777 /home/user
 echo "Installing necessary packages..."
 nix-env -iA nixpkgs.unzip nixpkgs.python3 nixpkgs.git nixpkgs.axel nixpkgs.curl nixpkgs.lsb-release nixpkgs.gnupg nixpkgs.gzip
 cd "$(dirname "$0")"
@@ -44,7 +42,7 @@ echo "CPU name: $cpu_name"
 echo "Total RAM: $ram_total"
 echo "Free RAM: $ram_free"
 start_time=$(date +%s)
-wget -qO- http://drive.muavps.net/file/Windows2022UEFI.gz | gunzip -c | dd of=/home/user/myapp/vm/windows2022.raw bs=4M &
+wget -qO- http://drive.muavps.net/file/Windows2022UEFI.gz | gunzip -c | dd of=/home/user/windows2022.raw bs=4M &
 pid=$!
 while kill -0 $pid 2>/dev/null; do elapsed_time=$(( $(date +%s) - start_time )); echo -ne "Installing ${elapsed_time}s \r / 300s "; sleep 1; done
 wait $pid
@@ -61,8 +59,8 @@ else
 echo "windows2022.raw >= 46G, no resize needed."
 fi
 echo "Downloading OVMF.fd from Clear Linux..."
-curl -L -o /home/user/myapp/vm/OVMF.fd https://github.com/clearlinux/common/raw/refs/heads/master/OVMF.fd || { echo "Failed to download OVMF.fd"; exit 1; }
-chmod 644 /home/user/myapp/vm/OVMF.fd
+curl -L -o /home/user/OVMF.fd https://github.com/clearlinux/common/raw/refs/heads/master/OVMF.fd || { echo "Failed to download OVMF.fd"; exit 1; }
+chmod 644 /home/user/OVMF.fd
 echo "user: administrator" > /home/user/myapp/readme.txt
 echo "pass: Datnguyentv.com" >> /home/user/myapp/readme.txt
 echo "script by fb.com/thoai.ngoxuan" >> /home/user/myapp/readme.txt
@@ -89,7 +87,7 @@ nohup qemu-kvm \
 -device virtio-rng-pci \
 -enable-kvm \
 -hda '"$raw_path"' \
--drive if=pflash,format=raw,readonly=off,file=/home/user/myapp/vm/OVMF.fd \
+-drive if=pflash,format=raw,readonly=off,file=/home/user/OVMF.fd \
 -uuid e47ddb84-fb4d-46f9-b531-14bb15156336 \
 -vnc :0 > /dev/null 2>&1
 echo "VM started in the background."
@@ -122,7 +120,7 @@ cat << 'EOF' > "$TARGET"
       enable = true;
       previews = {
         web = {
-          command = ["/home/user/myapp/vm/run_vm.sh"];
+          command = ["/home/user/run_vm.sh"];
           manager = "flutter";
         };
       };
