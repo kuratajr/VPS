@@ -56,7 +56,7 @@ else
 fi
 
 echo "✅ Docker and Tailscale Setup Completed."
-
+sudo tailscale up --ssh --hostname "$hostname"
 # =========================
 # 🔧 Configuring SSH on custom port
 # =========================
