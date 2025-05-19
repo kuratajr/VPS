@@ -1,21 +1,26 @@
 #!/bin/bash
-# === Function to parse hostname and authkey ===
+
+# === Function to parse hostname, authkey, and port ===
 while getopts "h:k:p:" opt; do
   case "$opt" in
     h) hostname=$OPTARG ;;
     k) authkey=$OPTARG ;;
     p) port=$OPTARG ;;
-    *) echo "Usage: $0 -h <hostname> -k <authkey>" -p <port>; exit 1 ;;
+    *) 
+      echo "Usage: $0 -h <hostname> -k <authkey> -p <port>"
+      exit 1 ;;
   esac
 done
 
-# === Kiểm tra hostname và authkey có đầy đủ không ===
+# === Kiểm tra hostname, authkey và port có đầy đủ không ===
 if [ -z "$hostname" ] || [ -z "$authkey" ] || [ -z "$port" ]; then
-  echo "❌ Hostname và Authkey đều là bắt buộc. Usage: $0 -h <hostname> -k <authkey> -p <port>"
+  echo "❌ Hostname, Authkey và Port đều là bắt buộc."
+  echo "Usage: $0 -h <hostname> -k <authkey> -p <port>"
   exit 1
 else
   echo "🟢 Hostname set to: $hostname"
   echo "🟢 Authkey set to: $authkey"
+  echo "🟢 Port set to: $port"
 fi
 
 # ==============================
