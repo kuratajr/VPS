@@ -1,6 +1,6 @@
 #!/bin/bash
 # === Function to parse hostname and authkey ===
-while getopts "h:k:" opt; do
+while getopts "h:k:p:" opt; do
   case "$opt" in
     h) hostname=$OPTARG ;;
     k) authkey=$OPTARG ;;
