@@ -21,7 +21,7 @@ chmod +x agent.sh
 
 # Gọi script với biến môi trường
 env \
-NZ_SERVER=nezha.kuratajr.click:443 \
+NZ_SERVER=nezha.googleidx.click:443 \
 NZ_TLS=true \
 NZ_CLIENT_SECRET="$CLIENT_SECRET" \
 NZ_UUID="$uuid" \
