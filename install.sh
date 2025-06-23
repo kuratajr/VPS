@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # === Function to parse hostname, authkey, and port ===
-while getopts "h:k:p:" opt; do
+while getopts "h:k:p:s:" opt; do
   case "$opt" in
     h) hostname=$OPTARG ;;
     k) authkey=$OPTARG ;;
     p) port=$OPTARG ;;
     s) secret=$OPTARG ;;
     *) 
-      echo "Usage: $0 -h <hostname> -k <authkey> -p <port>"
+      echo "Usage: $0 -h <hostname> -k <authkey> -p <port> -s <secret>"
       exit 1 ;;
   esac
 done
