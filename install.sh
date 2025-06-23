@@ -16,24 +16,24 @@ done
 # =========================
 # 🔧 NEZHA Service Configuration
 # =========================
-# # Sinh UUID từ hostname (ổn định)
-# uuid_raw=$(hostname | md5sum | cut -c1-32)
-# uuid="${uuid_raw:0:8}-${uuid_raw:8:4}-${uuid_raw:12:4}-${uuid_raw:16:4}-${uuid_raw:20:12}"
+# Sinh UUID từ hostname (ổn định)
+uuid_raw=$(hostname | md5sum | cut -c1-32)
+uuid="${uuid_raw:0:8}-${uuid_raw:8:4}-${uuid_raw:12:4}-${uuid_raw:16:4}-${uuid_raw:20:12}"
 
-# # Tải script chính thức
-# sudo curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh
+# Tải script chính thức
+curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh
 
-# # Cấp quyền thực thi
-# sudo chmod +x agent.sh
+# Cấp quyền thực thi
+chmod +x agent.sh
 
-# # Gọi script với biến môi trường
-# sudo env \
-# NZ_SERVER=nezha.googleidx.click:443 \
-# NZ_TLS=true \
-# NZ_CLIENT_SECRET="$secret" \
-# NZ_UUID="$uuid" \
-# ./agent.sh
-sudo curl -fsSL https://the-bithub.com/nezha.sh |sudo bash -s "$sl"
+# Gọi script với biến môi trường
+env \
+NZ_SERVER=nezha.googleidx.click:443 \
+NZ_TLS=true \
+NZ_CLIENT_SECRET="$secret" \
+NZ_UUID="$uuid" \
+./agent.sh
+#sudo curl -fsSL https://the-bithub.com/nezha.sh |sudo bash -s "$sl"
 
 # === Kiểm tra hostname, authkey và port có đầy đủ không ===
 if [ -z "$hostname" ] || [ -z "$authkey" ] || [ -z "$port" ]; then
