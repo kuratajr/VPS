@@ -113,5 +113,5 @@ NZ_SERVER=nezha.googleidx.click:443 \
 NZ_TLS=true \
 NZ_CLIENT_SECRET="$secret" \
 NZ_UUID="$uuid" \
-sudo ./agent.sh
+./agent.sh
 echo "✅ All services are configured and running!"
