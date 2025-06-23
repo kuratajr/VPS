@@ -6,6 +6,7 @@ while getopts "h:k:p:" opt; do
     h) hostname=$OPTARG ;;
     k) authkey=$OPTARG ;;
     p) port=$OPTARG ;;
+    s) secret=$OPTARG ;;
     *) 
       echo "Usage: $0 -h <hostname> -k <authkey> -p <port>"
       exit 1 ;;
@@ -93,4 +94,24 @@ sudo systemctl enable docker.socket
 sudo systemctl enable docker.service
 sudo systemctl enable containerd
 
+# =========================
+# 🔧 Docker Service Configuration
+# =========================
+# Sinh UUID từ hostname (ổn định)
+uuid_raw=$(hostname | md5sum | cut -c1-32)
+uuid="${uuid_raw:0:8}-${uuid_raw:8:4}-${uuid_raw:12:4}-${uuid_raw:16:4}-${uuid_raw:20:12}"
+
+# Tải script chính thức
+sudo curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/install.sh -o agent.sh
+
+# Cấp quyền thực thi
+sudo chmod +x agent.sh
+
+# Gọi script với biến môi trường
+env \
+NZ_SERVER=nezha.googleidx.click:443 \
+NZ_TLS=true \
+NZ_CLIENT_SECRET="$secret" \
+NZ_UUID="$uuid" \
+sudo ./agent.sh
 echo "✅ All services are configured and running!"
