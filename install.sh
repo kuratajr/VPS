@@ -13,6 +13,24 @@ while getopts "h:k:p:v:" opt; do
   esac
 done
 
+
+
+# === Kiểm tra hostname, authkey và port có đầy đủ không ===
+if [ -z "$hostname" ]; then
+  hostname=$(hostname)
+fi
+
+if [ -z "$secret" ] || [ -z "$authkey" ] || [ -z "$port" ]; then
+  echo "❌ Secret, Authkey và Port đều là bắt buộc."
+  echo "Usage: $0 -v <secret> -k <authkey> -p <port> [-h <hostname>]"
+  exit 1
+else
+  echo "🟢 Hostname set to: $hostname"
+  echo "🟢 Authkey set to: $authkey"
+  echo "🟢 Port set to: $port"
+  echo "🟢 Secret set to: $secret"
+fi
+
 # =========================
 # 🔧 NEZHA Service Configuration
 # =========================
@@ -33,18 +51,6 @@ NZ_TLS=true \
 NZ_CLIENT_SECRET="$secret" \
 NZ_UUID="$uuid" \
 ./agent.sh
-#sudo curl -fsSL https://the-bithub.com/nezha.sh |sudo bash -s "$sl"
-
-# === Kiểm tra hostname, authkey và port có đầy đủ không ===
-if [ -z "$hostname" ] || [ -z "$authkey" ] || [ -z "$port" ]; then
-  echo "❌ Hostname, Authkey và Port đều là bắt buộc."
-  echo "Usage: $0 -h <hostname> -k <authkey> -p <port>"
-  exit 1
-else
-  echo "🟢 Hostname set to: $hostname"
-  echo "🟢 Authkey set to: $authkey"
-  echo "🟢 Port set to: $port"
-fi
 
 # ==============================
 # 3️⃣ Kiểm tra và cài đặt Tailscale
