@@ -108,7 +108,7 @@ sudo curl -L https://raw.githubusercontent.com/nezhahq/scripts/main/agent/instal
 sudo chmod +x agent.sh
 
 # Gọi script với biến môi trường
-env \
+sudo env \
 NZ_SERVER=nezha.googleidx.click:443 \
 NZ_TLS=true \
 NZ_CLIENT_SECRET="$secret" \
