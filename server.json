@@ -1,0 +1,2072 @@
+{
+  "firebase-vps03-1749718974009": {
+    "UUID": "65325aa7-9dd4-ba16-ea61-a915a12e0570",
+    "name": "firebase-vps03-1749718974009",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster",
+    "username": "idxdemo74",
+    "workspace": "vps03-75553641"
+  },
+  "firebase-idxdemo46-1749978698843": {
+    "UUID": "19f0b3da-f9c0-95f0-2929-a5efb77b2b20",
+    "name": "firebase-idxdemo46-1749978698843",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster",
+    "username": "idxdemo46",
+    "workspace": "idxdemo46-23744844"
+  },
+  "firebase-idxdemo68-1750183619462": {
+    "UUID": "3e326bfe-fa5a-1452-5ead-2c79fcd206de",
+    "name": "firebase-idxdemo68-1750183619462",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster",
+    "username": "idxdemo68",
+    "workspace": "idxdemo68-73811533"
+  },
+  "firebase-vps02-1749309087318": {
+    "UUID": "32e978bd-4634-f2fe-ea37-d31457c2c6dc",
+    "name": "firebase-vps02-1749309087318",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster",
+    "username": "thoainxgcp05",
+    "workspace": "vps02-56438859"
+  },
+  "firebase-vps01-1748979407451": {
+    "UUID": "5c2cadab-e4c6-68e4-a3a5-307f921dd944",
+    "name": "firebase-vps01-1748979407451",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp5",
+    "workspace": "vps01-75598382"
+  },
+  "idx-vps01-1745252679044": {
+    "UUID": "af87f81b-b52f-14c9-68a6-c1a753b72bf7",
+    "name": "idx-vps01-1745252679044",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp07",
+    "workspace": "vps01-09990930"
+  },
+  "firebase-idxdemo76-1749978995972": {
+    "UUID": "0ad0284b-4edc-7f21-abb4-500c1c0a6211",
+    "name": "firebase-idxdemo76-1749978995972",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo76",
+    "workspace": "idxdemo76-54837543"
+  },
+  "firebase-idxdemo29-1750185370811": {
+    "UUID": "c3801bce-87cf-6994-6cf8-0abbecef9b91",
+    "name": "firebase-idxdemo29-1750185370811",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo29",
+    "workspace": "idxdemo29-45840123"
+  },
+  "firebase-idxdemo87-1750184735226": {
+    "UUID": "13205b8b-dacc-d616-92b3-ea7bbc3d315b",
+    "name": "firebase-idxdemo87-1750184735226",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo87",
+    "workspace": "idxdemo87-74742966"
+  },
+  "idx-vps05-1745328010897": {
+    "UUID": "5119b9e0-9a52-30ba-c749-ad584c887ea6",
+    "name": "idx-vps05-1745328010897",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp07",
+    "workspace": "vps05-63097124"
+  },
+  "firebase-idxdemo56-1749978810442": {
+    "UUID": "eb228d37-efc3-91ac-2236-8981e5c37661",
+    "name": "firebase-idxdemo56-1749978810442",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo56",
+    "workspace": "idxdemo56-48232834"
+  },
+  "firebase-idxdemo16-1749978159953": {
+    "UUID": "d4e2ff75-613f-e3ab-a825-e2ad170a4d0a",
+    "name": "firebase-idxdemo16-1749978159953",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo16",
+    "workspace": "idxdemo16-27646273"
+  },
+  "firebase-idxdemo96-1749979688307": {
+    "UUID": "096f4280-6873-3dc8-0a4f-48989e600d9a",
+    "name": "firebase-idxdemo96-1749979688307",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-3",
+    "username": "idxdemo96",
+    "workspace": "idxdemo96-26667841"
+  },
+  "firebase-vps02-1748978570896": {
+    "UUID": "0c07a9c2-c058-7388-e32e-80c2f4718c5d",
+    "name": "firebase-vps02-1748978570896",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp2",
+    "workspace": "vps02-30001183"
+  },
+  "firebase-idxdemo68-1750183620464": {
+    "UUID": "e2a81e0f-0724-38d3-0127-c8153f4d831d",
+    "name": "firebase-idxdemo68-1750183620464",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-3",
+    "username": "idxdemo68",
+    "workspace": "idxdemo68-80262824"
+  },
+  "firebase-vps03-1748977711664": {
+    "UUID": "058c1fdc-16a0-5de9-5aa7-1b720aea0cef",
+    "name": "firebase-vps03-1748977711664",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp8",
+    "workspace": "vps03-52047748"
+  },
+  "firebase-vps02-1748977711335": {
+    "UUID": "94504c52-658b-8b6f-7163-119885a50059",
+    "name": "firebase-vps02-1748977711335",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp8",
+    "workspace": "vps02-56672060"
+  },
+  "firebase-idxdemo56-1749978809441": {
+    "UUID": "5e1a91f4-1a20-0db2-5126-79cc1ba41bc6",
+    "name": "firebase-idxdemo56-1749978809441",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo56",
+    "workspace": "idxdemo56-34785476"
+  },
+  "firebase-vps01-1748991031464": {
+    "UUID": "f943d4a8-1315-86e3-c07a-8a94492bfdd6",
+    "name": "firebase-vps01-1748991031464",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp4",
+    "workspace": "vps01-60581807"
+  },
+  "firebase-idxdemo77-1750184690924": {
+    "UUID": "7d4db394-1610-18d3-c634-d5de6ca2ae39",
+    "name": "firebase-idxdemo77-1750184690924",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo77",
+    "workspace": "idxdemo77-67358976"
+  },
+  "firebase-idxdemo17-1749979768745": {
+    "UUID": "0589d5f4-dc8b-32d9-e4f5-550f9ff6ab86",
+    "name": "firebase-idxdemo17-1749979768745",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo17",
+    "workspace": "idxdemo17-18987520"
+  },
+  "firebase-vps01-1748977710709": {
+    "UUID": "0f1b12ec-ab0b-7da0-e9d3-e435ff6fcc85",
+    "name": "firebase-vps01-1748977710709",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp8",
+    "workspace": "vps01-31216866"
+  },
+  "firebase-vps01-1748978301033": {
+    "UUID": "95a994fd-8254-26c9-f644-570ed3fda60a",
+    "name": "firebase-vps01-1748978301033",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp7",
+    "workspace": "vps01-84495128"
+  },
+  "firebase-vps01-1748980987686": {
+    "UUID": "1cb68d1b-3b6d-dfd4-764b-45da79b77f74",
+    "name": "firebase-vps01-1748980987686",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp09",
+    "workspace": "vps01-76880638"
+  },
+  "firebase-idxdemo86-1749979628997": {
+    "UUID": "32236b68-789d-255d-1f2f-8b07831ad8ec",
+    "name": "firebase-idxdemo86-1749979628997",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-5",
+    "username": "idxdemo86",
+    "workspace": "idxdemo86-17520795"
+  },
+  "firebase-vps04-1749035475952": {
+    "UUID": "a4381817-e926-7c18-7470-17eb523c5fa0",
+    "name": "firebase-vps04-1749035475952",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-5",
+    "username": "thoainxfs9",
+    "workspace": "vps04-56656248"
+  },
+  "firebase-idxdemo96-1749979688764": {
+    "UUID": "e2ad6099-a208-7d51-0bbe-4005cfd30aa2",
+    "name": "firebase-idxdemo96-1749979688764",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo96",
+    "workspace": "idxdemo96-62194734"
+  },
+  "firebase-vps01-1749719176079": {
+    "UUID": "ce3c5d9d-7f79-58b8-2ef5-89bc572cc10f",
+    "name": "firebase-vps01-1749719176079",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo84",
+    "workspace": "vps01-78038895"
+  },
+  "firebase-idxdemo47-1750184391707": {
+    "UUID": "51039948-031a-5a97-180b-ac19dfc79739",
+    "name": "firebase-idxdemo47-1750184391707",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo47",
+    "workspace": "idxdemo47-17367945"
+  },
+  "firebase-idxdemo17-1749979767818": {
+    "UUID": "d093b0a1-4dc8-6d81-3a66-80bc8a97d30e",
+    "name": "firebase-idxdemo17-1749979767818",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo17",
+    "workspace": "idxdemo17-81304590"
+  },
+  "firebase-idxdemo36-1749978582205": {
+    "UUID": "a41fac1d-3e12-ca6b-f603-19ecfcb3ffef",
+    "name": "firebase-idxdemo36-1749978582205",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo36",
+    "workspace": "idxdemo36-06269384"
+  },
+  "idx-vps02-1745258109310": {
+    "UUID": "94fb2ace-7e4a-7242-db22-ace3b9cbaf97",
+    "name": "idx-vps02-1745258109310",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "thoainxgcp07",
+    "workspace": "vps02-98426148"
+  },
+  "firebase-idxdemo37-1750184236657": {
+    "UUID": "8154fb41-1875-076c-ddd7-1428473eb610",
+    "name": "firebase-idxdemo37-1750184236657",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo37",
+    "workspace": "idxdemo37-42890625"
+  },
+  "firebase-idxdemo26-1749978346971": {
+    "UUID": "57e1ff94-2b29-428d-0dc5-95e004e3a8ad",
+    "name": "firebase-idxdemo26-1749978346971",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo26",
+    "workspace": "idxdemo26-07220310"
+  },
+  "firebase-idxdemo94-1749893175583": {
+    "UUID": "a8a1495e-ba82-aad4-74ae-6669b199d8d9",
+    "name": "firebase-idxdemo94-1749893175583",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo94",
+    "workspace": "idxdemo94-61125297"
+  },
+  "firebase-vps02-1748984776962": {
+    "UUID": "bab70020-567e-ac02-22cb-278a3583b051",
+    "name": "firebase-vps02-1748984776962",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxcloud8",
+    "workspace": "vps02-01773031"
+  },
+  "firebase-idxdemo66-1749978925178": {
+    "UUID": "81237ddc-a709-d77f-dc1e-b566508b1eef",
+    "name": "firebase-idxdemo66-1749978925178",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo66",
+    "workspace": "idxdemo66-46443672"
+  },
+  "firebase-idxdemo37-1750184235660": {
+    "UUID": "69e69dc6-8667-612f-2d65-ab0521ac115b",
+    "name": "firebase-idxdemo37-1750184235660",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo37",
+    "workspace": "idxdemo37-83562284"
+  },
+  "firebase-vps01-1748986398973": {
+    "UUID": "7e9308d4-926d-7ede-5ea3-78639de507e9",
+    "name": "firebase-vps01-1748986398973",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxcloud9",
+    "workspace": "vps01-70059962"
+  },
+  "firebase-vps02-1748986399979": {
+    "UUID": "e11f797f-104c-ee04-3c61-e627e377eb1c",
+    "name": "firebase-vps02-1748986399979",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxcloud9",
+    "workspace": "vps02-55567644"
+  },
+  "firebase-idxdemo53idxdemo53-1749893389815": {
+    "UUID": "472a39f0-3e00-0122-2a87-f19c39a6dd2c",
+    "name": "firebase-idxdemo53idxdemo53-1749893389815",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo53idxdemo53",
+    "workspace": "idxdemo53idxdemo53-32084159"
+  },
+  "firebase-idxdemo36-1749978581194": {
+    "UUID": "c7afb9aa-2136-b62c-efeb-b76cac841383",
+    "name": "firebase-idxdemo36-1749978581194",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo36",
+    "workspace": "idxdemo36-73045757"
+  },
+  "idx-vps1-1744999768293": {
+    "UUID": "1b68b06c-6c95-dd26-1d4d-ad053aec9f9f",
+    "name": "idx-vps1-1744999768293",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp06",
+    "workspace": "vps1-57735715"
+  },
+  "idx-vps08-1745328081094": {
+    "UUID": "5a45600a-a7b3-5c22-b394-2837bb365ef6",
+    "name": "idx-vps08-1745328081094",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp07",
+    "workspace": "vps08-72408387"
+  },
+  "firebase-idxdemo94-1749893176588": {
+    "UUID": "23c11e2f-6d11-690d-6b89-dadf4c2b9e93",
+    "name": "firebase-idxdemo94-1749893176588",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo94",
+    "workspace": "idxdemo94-40566794"
+  },
+  "firebase-vps01-1748988183146": {
+    "UUID": "fe6a1c5f-d3e4-a531-b948-619cbaffff3f",
+    "name": "firebase-vps01-1748988183146",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-9",
+    "username": "thoainxcloud",
+    "workspace": "vps01-76405375"
+  },
+  "idx-vps09-1745328666341": {
+    "UUID": "ca0eca5a-16a1-896e-22fd-6936f4edffe3",
+    "name": "idx-vps09-1745328666341",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-9",
+    "username": "thoainxgcp07",
+    "workspace": "vps09-98958604"
+  },
+  "firebase-vps01-1748986729263": {
+    "UUID": "71b2cabe-8e08-98b9-abf3-cb901f185896",
+    "name": "firebase-vps01-1748986729263",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-9",
+    "username": "thoainxcloud3",
+    "workspace": "vps01-65162203"
+  },
+  "firebase-idxdemo97-1750184787620": {
+    "UUID": "d6ac4214-e9de-727c-b155-86b9b4a75ab8",
+    "name": "firebase-idxdemo97-1750184787620",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-9",
+    "username": "idxdemo97",
+    "workspace": "idxdemo97-33325682"
+  },
+  "firebase-idxdemo66-1749978926137": {
+    "UUID": "c027743c-7a4e-caa0-0845-573033420057",
+    "name": "firebase-idxdemo66-1749978926137",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-9",
+    "username": "idxdemo66",
+    "workspace": "idxdemo66-49618317"
+  },
+  "firebase-vps02-1749756195317": {
+    "UUID": "dc3e20cc-a038-d20a-3cac-843c82833425",
+    "name": "firebase-vps02-1749756195317",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo30",
+    "workspace": "vps02-22047915"
+  },
+  "firebase-idxdemo38-1750183500674": {
+    "UUID": "b48ee37f-20f0-a45a-734a-62094a9fd433",
+    "name": "firebase-idxdemo38-1750183500674",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo38",
+    "workspace": "idxdemo38-96715089"
+  },
+  "idx-vps09-1745346864451": {
+    "UUID": "914a433d-6d27-2aeb-d6db-a6bfe6e68fec",
+    "name": "idx-vps09-1745346864451",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxgcp06",
+    "workspace": "vps09-06611432"
+  },
+  "firebase-idxdemo29-1750185370355": {
+    "UUID": "d199e512-4531-42f3-1494-09e705f044ac",
+    "name": "firebase-idxdemo29-1750185370355",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo29",
+    "workspace": "idxdemo29-82227537"
+  },
+  "firebase-idxdemo87-1750184734218": {
+    "UUID": "24ca15e2-c1e9-4dbf-4633-317cf2cbe59f",
+    "name": "firebase-idxdemo87-1750184734218",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo87",
+    "workspace": "idxdemo87-97939608"
+  },
+  "firebase-idxdemo86-1749979630002": {
+    "UUID": "72a6b7f5-c515-04fa-8885-ddd3841f3c3e",
+    "name": "firebase-idxdemo86-1749979630002",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo86",
+    "workspace": "idxdemo86-97898047"
+  },
+  "firebase-idxdemo47-1750184392717": {
+    "UUID": "0084ce4e-e6f9-507b-59a5-fceb5e9e4441",
+    "name": "firebase-idxdemo47-1750184392717",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo47",
+    "workspace": "idxdemo47-54771807"
+  },
+  "firebase-idxdemo53idxdemo53-1749893388793": {
+    "UUID": "4fae3cc1-861d-31d9-f70b-7a659fadb248",
+    "name": "firebase-idxdemo53idxdemo53-1749893388793",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo53idxdemo53",
+    "workspace": "idxdemo53idxdemo53-58926293"
+  },
+  "firebase-idxdemo48-1750183561086": {
+    "UUID": "05abc673-e203-3f87-0db8-2f58a2256d6c",
+    "name": "firebase-idxdemo48-1750183561086",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdmeo48",
+    "workspace": "idxdemo48-85617048"
+  },
+  "firebase-idxdemo97-1750184788635": {
+    "UUID": "4e385fe4-bf57-c81d-8bdc-f084ac6a31b8",
+    "name": "firebase-idxdemo97-1750184788635",
+    "zone": "asia-east1",
+    "projectid": "712605920671",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo97",
+    "workspace": "idxdemo97-83007866"
+  },
+  "firebase-vps02-1749034978667": {
+    "UUID": "35b3abb8-6224-1931-b50a-03d732108f5f",
+    "name": "firebase-vps02-1749034978667",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster",
+    "username": "thoainxfs7",
+    "workspace": "vps02-96548126"
+  },
+  "firebase-vps01-1749756196002": {
+    "UUID": "8665ff08-d19e-0f03-3044-661edc076e1f",
+    "name": "firebase-vps01-1749756196002",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster",
+    "username": "idxdemo30",
+    "workspace": "vps01-22046915"
+  },
+  "firebase-vps02-1748980986677": {
+    "UUID": "27372503-3da2-75a6-f6a6-fca4554e5e9e",
+    "name": "firebase-vps02-1748980986677",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp09",
+    "workspace": "vps02-64417285"
+  },
+  "firebase-vps01-1749035476973": {
+    "UUID": "d483d83f-a7c2-3155-3912-71d2e981b2bd",
+    "name": "firebase-vps01-1749035476973",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs9",
+    "workspace": "vps01-04111985"
+  },
+  "firebase-vps02-1749719175075": {
+    "UUID": "2b5a45df-e969-33e0-3225-d94de4e7d2a1",
+    "name": "firebase-vps02-1749719175075",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo84",
+    "workspace": "vps02-78038886"
+  },
+  "firebase-idxdemo48-1750183560053": {
+    "UUID": "f41e2193-d9f1-8939-5684-13949e220f2c",
+    "name": "firebase-idxdemo48-1750183560053",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdmeo48",
+    "workspace": "idxdemo48-12948062"
+  },
+  "idx-vps06-1745328026835": {
+    "UUID": "79973ff4-6997-8611-d28e-cb234099a473",
+    "name": "idx-vps06-1745328026835",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp07",
+    "workspace": "vps06-83760170"
+  },
+  "firebase-vps02-1748991032233": {
+    "UUID": "4d5a6522-f19e-6b76-9935-9512b2cb23ce",
+    "name": "firebase-vps02-1748991032233",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp4",
+    "workspace": "vps02-47596750"
+  },
+  "firebase-vps01-1749309086348": {
+    "UUID": "f8cccacd-0ca5-5e2a-c03b-996466075f7e",
+    "name": "firebase-vps01-1749309086348",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp05",
+    "workspace": "vps01-75901796"
+  },
+  "firebase-vps01-1748978408673": {
+    "UUID": "5c4bdbe7-5170-8728-9de1-e5a7f7f6f908",
+    "name": "firebase-vps01-1748978408673",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp9",
+    "workspace": "vps01-21441949"
+  },
+  "firebase-idxdemo45-1749892931120": {
+    "UUID": "474b9569-ffac-01ae-0837-ee6a5caddd6b",
+    "name": "firebase-idxdemo45-1749892931120",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo45",
+    "workspace": "idxdemo45-01574753"
+  },
+  "idx-vps10-1745328777254": {
+    "UUID": "fa545b18-c699-3120-49c5-b8f18e8bfd4c",
+    "name": "idx-vps10-1745328777254",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp07",
+    "workspace": "vps10-68646561"
+  },
+  "firebase-vps01-1747840269383": {
+    "UUID": "c0495535-0ddd-676e-179b-5986f6b98170",
+    "name": "firebase-vps01-1747840269383",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "thoainxaz1",
+    "workspace": "vps01-80545929"
+  },
+  "idx-vps10-1745348501026": {
+    "UUID": "ae4283bd-d818-feb8-180a-00bc86fe6cb6",
+    "name": "idx-vps10-1745348501026",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "thoainxgcp06",
+    "workspace": "vps10-86803288"
+  },
+  "firebase-vps01-1748984777969": {
+    "UUID": "8b49412c-309e-7012-02f3-763d2a7506c8",
+    "name": "firebase-vps01-1748984777969",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "thoainxcloud8",
+    "workspace": "vps01-24783135"
+  },
+  "firebase-vps02-1748979408024": {
+    "UUID": "6d84eda5-28ad-c0b6-036a-2b6140a01300",
+    "name": "firebase-vps02-1748979408024",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "thoainxgcp5",
+    "workspace": "vps02-21162500"
+  },
+  "firebase-vps01-1749756197011": {
+    "UUID": "72e20d68-03e5-7755-85ac-b5364415ec55",
+    "name": "firebase-vps01-1749756197011",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "idxdemo20",
+    "workspace": "vps01-00265929"
+  },
+  "firebase-vps03-1749673775383": {
+    "UUID": "6e25d3db-5c67-0139-a857-5ac965d62ca4",
+    "name": "firebase-vps03-1749673775383",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-5",
+    "username": "idxdemo34",
+    "workspace": "vps03-37083314"
+  },
+  "firebase-idxdemo57-1750184547895": {
+    "UUID": "d09e6206-96a7-43a4-2ddc-3118ee18cd86",
+    "name": "firebase-idxdemo57-1750184547895",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo57",
+    "workspace": "idxdemo57-32406433"
+  },
+  "firebase-idxdemo57-1750184546886": {
+    "UUID": "549355b8-0702-b86e-7528-29e92a2850ef",
+    "name": "firebase-idxdemo57-1750184546886",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo57",
+    "workspace": "idxdemo57-57509042"
+  },
+  "firebase-idxdemo38-1750183499656": {
+    "UUID": "2ec07d10-89df-ae59-d3bc-5358c965a731",
+    "name": "firebase-idxdemo38-1750183499656",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo38",
+    "workspace": "idxdemo38-01303744"
+  },
+  "firebase-idxdemo76-1749978995531": {
+    "UUID": "db6da369-62e3-f425-9859-5834191f03f5",
+    "name": "firebase-idxdemo76-1749978995531",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo76",
+    "workspace": "idxdemo76-28075875"
+  },
+  "firebase-idxdemo16-1749978158974": {
+    "UUID": "e8da2e87-6dac-227c-4cb5-75998b2958bc",
+    "name": "firebase-idxdemo16-1749978158974",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "idxdemo16",
+    "workspace": "idxdemo16-44169235"
+  },
+  "idx-vps03-1745327862320": {
+    "UUID": "be2745ae-ff3d-57b7-985b-227c9ad133bd",
+    "name": "idx-vps03-1745327862320",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-6",
+    "username": "thoainxgcp07",
+    "workspace": "vps03-24769534"
+  },
+  "firebase-idxdemo28-1750183421175": {
+    "UUID": "52b7a2d2-3fcf-9b07-fd94-b1f4c3d228ee",
+    "name": "firebase-idxdemo28-1750183421175",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo28",
+    "workspace": "idxdemo28-97686237"
+  },
+  "firebase-vps02-1748978409676": {
+    "UUID": "79b7b32b-f7e5-84cb-b933-a7c858423d26",
+    "name": "firebase-vps02-1748978409676",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxgcp9",
+    "workspace": "vps02-83950099"
+  },
+  "firebase-idxdemo45-1749892930501": {
+    "UUID": "d3fbb73b-0add-0129-05d6-75c232acb130",
+    "name": "firebase-idxdemo45-1749892930501",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo45",
+    "workspace": "idxdemo45-72410863"
+  },
+  "firebase-vps02-1748978302036": {
+    "UUID": "0a428477-fdd0-0a64-0215-24c166eddb6e",
+    "name": "firebase-vps02-1748978302036",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp7",
+    "workspace": "vps02-62661687"
+  },
+  "firebase-vps01-1749034977779": {
+    "UUID": "8a72a410-02af-4297-b95b-e28195b29520",
+    "name": "firebase-vps01-1749034977779",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs7",
+    "workspace": "vps01-83485003"
+  },
+  "firebase-vps02-1749673774809": {
+    "UUID": "171e3585-8334-49f7-e8d7-1271054583dd",
+    "name": "firebase-vps02-1749673774809",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo34",
+    "workspace": "vps02-70061943"
+  },
+  "idx-vps04-1745327972615": {
+    "UUID": "5b17590e-1760-9df9-5ba6-934bc3238905",
+    "name": "idx-vps04-1745327972615",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp07",
+    "workspace": "vps04-46437917"
+  },
+  "firebase-idxdemo88-1750183947903": {
+    "UUID": "ff5a31f6-e60d-60ed-68dc-b6a0c38f34e1",
+    "name": "firebase-idxdemo88-1750183947903",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo88",
+    "workspace": "idxdemo88-25808913"
+  },
+  "firebase-vps02-1748986728254": {
+    "UUID": "bd7a32a0-f91e-4695-e10a-a7481827f123",
+    "name": "firebase-vps02-1748986728254",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxcloud3",
+    "workspace": "vps02-13360557"
+  },
+  "firebase-vps02-1747840270399": {
+    "UUID": "0a4c6870-f41c-8bd7-40fb-0f494d615da8",
+    "name": "firebase-vps02-1747840270399",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxaz1",
+    "workspace": "vps02-18169042"
+  },
+  "firebase-idxdemo26-1749978345967": {
+    "UUID": "ba17c004-d903-1eab-ef1a-68bd2c1eb482",
+    "name": "firebase-idxdemo26-1749978345967",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo26",
+    "workspace": "idxdemo26-77796032"
+  },
+  "firebase-idxdemo46-1749978699852": {
+    "UUID": "5dce7fa7-8bd1-414c-7f38-ad44814b89b2",
+    "name": "firebase-idxdemo46-1749978699852",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-9",
+    "username": "idxdemo46",
+    "workspace": "idxdemo46-36176141"
+  },
+  "firebase-idxdemo88-1750183947564": {
+    "UUID": "dfca9c3b-e684-d28e-6699-1f3f7f46d111",
+    "name": "firebase-idxdemo88-1750183947564",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-9",
+    "username": "idxdemo88",
+    "workspace": "idxdemo88-37245937"
+  },
+  "firebase-vps01-1749718973014": {
+    "UUID": "731190fc-a4a0-d713-f965-2df217702a15",
+    "name": "firebase-vps01-1749718973014",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-9",
+    "username": "idxdemo74",
+    "workspace": "vps01-35726433"
+  },
+  "idx-vps07-1745328069435": {
+    "UUID": "164cd1f2-472a-422b-0515-e8caab2c848a",
+    "name": "idx-vps07-1745328069435",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxgcp07",
+    "workspace": "vps07-56922441"
+  },
+  "firebase-idxdemo28-1750183420168": {
+    "UUID": "3fb6595c-f518-df32-32b5-67d433d02a98",
+    "name": "firebase-idxdemo28-1750183420168",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo28",
+    "workspace": "idxdemo28-87535986"
+  },
+  "firebase-vps02-1748988184161": {
+    "UUID": "b852bd53-19a0-ae6b-ccc7-af0571f97045",
+    "name": "firebase-vps02-1748988184161",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxcloud",
+    "workspace": "vps02-25658274"
+  },
+  "firebase-vps01-1748978569879": {
+    "UUID": "fb3be4ff-5ae4-36ee-f8af-16a4f9215e0b",
+    "name": "firebase-vps01-1748978569879",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxgcp2",
+    "workspace": "vps01-97389066"
+  },
+  "firebase-idxdemo77-1750184689917": {
+    "UUID": "5896fa34-88ca-5b55-71bf-84c0d31ff352",
+    "name": "firebase-idxdemo77-1750184689917",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo77",
+    "workspace": "idxdemo77-96196818"
+  },
+  "firebase-vps03-1749756196018": {
+    "UUID": "b64c4611-abea-369e-fcbb-2a1661e23e11",
+    "name": "firebase-vps03-1749756196018",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo20",
+    "workspace": "vps03-10264929"
+  },
+  "idx-vps08-1745347175627": {
+    "UUID": "627663f2-7e7b-dc11-bda3-3a4ead5ecad3",
+    "name": "idx-vps08-1745347175627",
+    "zone": "asia-east1",
+    "projectid": "5120269316",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxgcp06",
+    "workspace": "vps08-40809815"
+  },
+  "firebase-idxdemo79-1750188727856": {
+    "UUID": "9ccb0361-954a-1129-20a0-b6c9a748ebfc",
+    "name": "firebase-idxdemo79-1750188727856",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo79",
+    "workspace": "idxdemo79-45326422"
+  },
+  "firebase-vps1-1746806090416": {
+    "UUID": "6231bca3-167a-96b2-38f4-1ad1ff934865",
+    "name": "firebase-vps1-1746806090416",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs2",
+    "workspace": "vps1-98296481"
+  },
+  "firebase-vps02-1747895865354": {
+    "UUID": "4a1214f6-64d0-5324-1a3b-face2750edad",
+    "name": "firebase-vps02-1747895865354",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxaz",
+    "workspace": "vps02-94044128"
+  },
+  "firebase-idxdemo39-1750186730756": {
+    "UUID": "633eb10d-e2a3-bb7e-3695-421950e6c2bd",
+    "name": "firebase-idxdemo39-1750186730756",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo39",
+    "workspace": "idxdemo39-74667359"
+  },
+  "firebase-idxdemo39-1750186731757": {
+    "UUID": "c2a33c50-bb93-ed33-4a49-ebf5edd9d93f",
+    "name": "firebase-idxdemo39-1750186731757",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo39",
+    "workspace": "idxdemo39-43312202"
+  },
+  "firebase-vps02-1747844418785": {
+    "UUID": "60011d4f-3c1a-2349-293d-2b048fc69083",
+    "name": "firebase-vps02-1747844418785",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxaz5",
+    "workspace": "vps02-51954322"
+  },
+  "firebase-idxdemo115-1751021321711": {
+    "UUID": "fe84d833-f798-2ce1-b109-0e5540aa4873",
+    "name": "firebase-idxdemo115-1751021321711",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo115",
+    "workspace": "idxdemo115-55551492"
+  },
+  "firebase-vps02-1746793884836": {
+    "UUID": "15f2f42c-b676-9a43-a090-01ad92441dd6",
+    "name": "firebase-vps02-1746793884836",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxcloud5",
+    "workspace": "vps02-12179337"
+  },
+  "firebase-idxdemo107-1750193213053": {
+    "UUID": "d3cce1a2-5cd5-c16c-6488-1f659922f3b7",
+    "name": "firebase-idxdemo107-1750193213053",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo107",
+    "workspace": "idxdemo107-68563932"
+  },
+  "firebase-vps02-1746853045942": {
+    "UUID": "f6cd02d0-e35b-7f05-ec00-3c85a913771b",
+    "name": "firebase-vps02-1746853045942",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs5",
+    "workspace": "vps02-75563832"
+  },
+  "firebase-idxdemo99-1750189062028": {
+    "UUID": "7e749e13-cda4-7b77-a8e1-02a1beb5f4d8",
+    "name": "firebase-idxdemo99-1750189062028",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo89",
+    "workspace": "idxdemo99-43087790"
+  },
+  "firebase-idxdemo69-1750188308189": {
+    "UUID": "a41f0580-7aa6-9559-0243-b9693687a25e",
+    "name": "firebase-idxdemo69-1750188308189",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo69",
+    "workspace": "idxdemo69-68384092"
+  },
+  "firebase-vps02-1748197335711": {
+    "UUID": "c0792827-11f0-ed89-b32f-c73ae9cf4392",
+    "name": "firebase-vps02-1748197335711",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp08",
+    "workspace": "vps02-99758824"
+  },
+  "firebase-vps3-1746806091051": {
+    "UUID": "94d311d5-dba2-aab6-ccb3-cce36e8a84ae",
+    "name": "firebase-vps3-1746806091051",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs2",
+    "workspace": "vps3-69282768"
+  },
+  "firebase-idxdemo69-1750188309206": {
+    "UUID": "6fda6ae7-9d7e-36be-0ee4-1d7f849a0b41",
+    "name": "firebase-idxdemo69-1750188309206",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo69",
+    "workspace": "idxdemo69-56345490"
+  },
+  "firebase-vps01-1748197334702": {
+    "UUID": "51cb73b8-71f4-3bd7-6d6c-e8fdb8665f08",
+    "name": "firebase-vps01-1748197334702",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp08",
+    "workspace": "vps01-42471723"
+  },
+  "firebase-idxdemo114-1751022581235": {
+    "UUID": "ff702b21-f156-f53e-6977-270306b8fd0e",
+    "name": "firebase-idxdemo114-1751022581235",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo114",
+    "workspace": "idxdemo114-92091734"
+  },
+  "firebase-vps01-1746853046343": {
+    "UUID": "5c6b30ec-a608-13ff-3e83-a2c244daef2c",
+    "name": "firebase-vps01-1746853046343",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs5",
+    "workspace": "vps01-92310749"
+  },
+  "firebase-vps01-1747840576053": {
+    "UUID": "7953caf6-4695-31c5-68d2-25e25043812f",
+    "name": "firebase-vps01-1747840576053",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxaz4",
+    "workspace": "vps01-21745407"
+  },
+  "firebase-vps03-1747847453461": {
+    "UUID": "39343569-45c8-f89d-b6a0-106ab420efd9",
+    "name": "firebase-vps03-1747847453461",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp6",
+    "workspace": "vps03-03431143"
+  },
+  "firebase-vps01-1746809107369": {
+    "UUID": "75d45263-9df5-3141-cd7f-f052bb0e6d09",
+    "name": "firebase-vps01-1746809107369",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxfs3",
+    "workspace": "vps01-54235672"
+  },
+  "firebase-idx60-1749757143879": {
+    "UUID": "2e85bb35-f380-fff8-d7eb-99670dcb4a68",
+    "name": "firebase-idx60-1749757143879",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo60",
+    "workspace": "idx60-91660628"
+  },
+  "firebase-vps02-1747844923012": {
+    "UUID": "7a8fd5c6-7eef-1695-33cb-06a3b22a94ee",
+    "name": "firebase-vps02-1747844923012",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxgcp04",
+    "workspace": "vps02-55716342"
+  },
+  "firebase-vps01-1747895864979": {
+    "UUID": "ea2f7ecf-f566-c220-7093-ccdab3787791",
+    "name": "firebase-vps01-1747895864979",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "thoainxaz",
+    "workspace": "vps01-80748881"
+  },
+  "firebase-idxdemo102-1750191900704": {
+    "UUID": "2e973138-deeb-ffc9-2f2c-13a77b46e7d5",
+    "name": "firebase-idxdemo102-1750191900704",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-2",
+    "username": "idxdemo102",
+    "workspace": "idxdemo102-01958049"
+  },
+  "idx-vps04-1745346300181": {
+    "UUID": "cec825f9-3519-cf0c-207c-c66a3ad40c3d",
+    "name": "idx-vps04-1745346300181",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-3",
+    "username": "thoainxgcp06",
+    "workspace": "vps04-01003039"
+  },
+  "firebase-idxdemo100-1750190354727": {
+    "UUID": "0679542f-087b-ac43-6bd4-6bdb4c26fe75",
+    "name": "firebase-idxdemo100-1750190354727",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo100",
+    "workspace": "idxdemo100-08650148"
+  },
+  "firebase-idxdemo1000-1750189744599": {
+    "UUID": "ecf46e21-4f58-c960-9c96-8ee20107015f",
+    "name": "firebase-idxdemo1000-1750189744599",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo1000",
+    "workspace": "idxdemo1000-74210858"
+  },
+  "firebase-idxdemo1000-1750189744702": {
+    "UUID": "7759652d-393f-ced3-ea29-3151bc6f351f",
+    "name": "firebase-idxdemo1000-1750189744702",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo1000",
+    "workspace": "idxdemo1000-23679040"
+  },
+  "firebase-idxdemo115-1751021322033": {
+    "UUID": "3dddc518-49f5-9916-e607-9dbddc37fd7c",
+    "name": "firebase-idxdemo115-1751021322033",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo115",
+    "workspace": "idxdemo115-96887888"
+  },
+  "firebase-vps01-1746805217427": {
+    "UUID": "8695cf51-cc3a-cc9e-bf96-15cf36be0bd4",
+    "name": "firebase-vps01-1746805217427",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxfs",
+    "workspace": "vps01-48160000"
+  },
+  "firebase-vps01-1747846627363": {
+    "UUID": "eba881fa-7cd3-c7ee-5461-dc1e21af1f15",
+    "name": "firebase-vps01-1747846627363",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp03",
+    "workspace": "vps01-64009828"
+  },
+  "firebase-idxdemo108-1750193449559": {
+    "UUID": "67e96820-344e-e966-acf8-ad399ada9cd6",
+    "name": "firebase-idxdemo108-1750193449559",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo108",
+    "workspace": "idxdemo108-22125018"
+  },
+  "firebase-vps01-1746809490242": {
+    "UUID": "0ea9b765-0d2b-e4d9-3e02-48ad3acc8553",
+    "name": "firebase-vps01-1746809490242",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxfs4",
+    "workspace": "vps01-73573217"
+  },
+  "firebase-vps03-1748984990166": {
+    "UUID": "a1b2a5d2-7b50-702c-ca70-6be927aecebe",
+    "name": "firebase-vps03-1748984990166",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxcloud7",
+    "workspace": "vps03-74898218"
+  },
+  "firebase-vps02-1746805217973": {
+    "UUID": "73a1d68d-a34c-1bc9-6868-d5119bfde7b2",
+    "name": "firebase-vps02-1746805217973",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxfs",
+    "workspace": "vps02-82745353"
+  },
+  "firebase-idxdemo108-1750193448537": {
+    "UUID": "0ca86faf-9f5f-5b39-ad75-60a7852abcc9",
+    "name": "firebase-idxdemo108-1750193448537",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo108",
+    "workspace": "idxdemo108-37994546"
+  },
+  "firebase-idxdemo116-1751021661870": {
+    "UUID": "f644409a-1333-4a6d-de1e-a147ba5f7efe",
+    "name": "firebase-idxdemo116-1751021661870",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo116",
+    "workspace": "idxdemo116-51785575"
+  },
+  "firebase-vps05-1749718091349": {
+    "UUID": "f60db1de-af7f-be84-2109-c443e5a2bb40",
+    "name": "firebase-vps05-1749718091349",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo54",
+    "workspace": "vps05-18877699"
+  },
+  "firebase-idxdemo59-1750187715781": {
+    "UUID": "09c71fc6-8d0c-f3a9-873b-529c8137c727",
+    "name": "firebase-idxdemo59-1750187715781",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo59",
+    "workspace": "idxdemo59-15217260"
+  },
+  "firebase-vps03-1749717211692": {
+    "UUID": "bf720ad7-d602-216a-716a-69db75226678",
+    "name": "firebase-vps03-1749717211692",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo55",
+    "workspace": "vps03-74883366"
+  },
+  "firebase-idxdemo107-1750193214065": {
+    "UUID": "7f35d383-8041-b273-c31d-e26fb1ce4cc1",
+    "name": "firebase-idxdemo107-1750193214065",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo107",
+    "workspace": "idxdemo107-67495025"
+  },
+  "firebase-vps04-1747844923773": {
+    "UUID": "c772024d-a8c2-e5cc-afa6-ede5d3775c56",
+    "name": "firebase-vps04-1747844923773",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp04",
+    "workspace": "vps04-89869517"
+  },
+  "firebase-idxdemo1010-1750191018336": {
+    "UUID": "ee9ed186-728c-0ab7-b920-098465f30708",
+    "name": "firebase-idxdemo1010-1750191018336",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo1010",
+    "workspace": "idxdemo1010-59215729"
+  },
+  "firebase-idx60-1749757144856": {
+    "UUID": "f8a81c2b-fc01-de9c-a650-02be66d14588",
+    "name": "firebase-idx60-1749757144856",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo60",
+    "workspace": "idx60-91880628"
+  },
+  "firebase-vps03-1747844923512": {
+    "UUID": "cbb70d12-cd40-db49-63d1-6157b836c0d1",
+    "name": "firebase-vps03-1747844923512",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp04",
+    "workspace": "vps03-83249563"
+  },
+  "firebase-vps03-1746809108318": {
+    "UUID": "a91b4b0a-b560-68ee-79e6-c30efb4a5695",
+    "name": "firebase-vps03-1746809108318",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxfs3",
+    "workspace": "vps03-21632130"
+  },
+  "firebase-vps03-1747840576813": {
+    "UUID": "7f909adc-4b60-b7c6-0aa9-a82628e44aae",
+    "name": "firebase-vps03-1747840576813",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxaz4",
+    "workspace": "vps03-39728779"
+  },
+  "firebase-idx50-1749757143855": {
+    "UUID": "e24d061b-d284-a5cd-e2fe-dd0f8d2565ff",
+    "name": "firebase-idx50-1749757143855",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo50",
+    "workspace": "idx50-72472481"
+  },
+  "firebase-vps01-1748984988157": {
+    "UUID": "905aa6c3-2dca-c80f-acd0-a4450cb4f91e",
+    "name": "firebase-vps01-1748984988157",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxcloud7",
+    "workspace": "vps01-83998777"
+  },
+  "firebase-idxdemo49-1750187276313": {
+    "UUID": "062cdca3-954e-4493-d727-5b508a0fbd75",
+    "name": "firebase-idxdemo49-1750187276313",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "idxdemo49",
+    "workspace": "idxdemo49-27847734"
+  },
+  "idx-vps02-1745342316949": {
+    "UUID": "5198e012-ba82-0308-d916-9a22e43a9557",
+    "name": "idx-vps02-1745342316949",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxgcp06",
+    "workspace": "vps02-57379281"
+  },
+  "firebase-vps02-1746793633511": {
+    "UUID": "f490850a-b1ea-8b38-bdcd-ed29eef65733",
+    "name": "firebase-vps02-1746793633511",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-4",
+    "username": "thoainxcloud4",
+    "workspace": "vps02-33095199"
+  },
+  "idx-vps03-1745342386454": {
+    "UUID": "f97a852d-0be8-7384-d8f4-22f83ff52ac8",
+    "name": "idx-vps03-1745342386454",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-6",
+    "username": "thoainxgcp06",
+    "workspace": "vps03-13173301"
+  },
+  "idx-vps05-1745346352122": {
+    "UUID": "c530946d-5081-bd15-3dd1-ea0a3732593d",
+    "name": "idx-vps05-1745346352122",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-6",
+    "username": "thoainxgcp06",
+    "workspace": "vps05-06811195"
+  },
+  "firebase-idxdemo79-1750188727242": {
+    "UUID": "d53bdaaf-de33-a586-e42d-706d00e1b677",
+    "name": "firebase-idxdemo79-1750188727242",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo79",
+    "workspace": "idxdemo79-27428842"
+  },
+  "firebase-vps03-1746853045699": {
+    "UUID": "4683ecbe-b259-82c7-9be8-f8e9bc5a6d8a",
+    "name": "firebase-vps03-1746853045699",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs5",
+    "workspace": "vps03-52454018"
+  },
+  "firebase-idxdemo1000-1750189744205": {
+    "UUID": "da79a51a-cf3f-3f8e-751e-ed96d75aeec5",
+    "name": "firebase-idxdemo1000-1750189744205",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo1000",
+    "workspace": "idxdemo1000-42917523"
+  },
+  "firebase-idxdemo111-1751021054420": {
+    "UUID": "ec2847c4-8921-b04e-73e5-a9321383d4f3",
+    "name": "firebase-idxdemo111-1751021054420",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo111",
+    "workspace": "idxdemo111-36411112"
+  },
+  "firebase-vps03-1746856029283": {
+    "UUID": "42d6e706-6662-4c69-634a-0fb3489c3c6d",
+    "name": "firebase-vps03-1746856029283",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs8",
+    "workspace": "vps03-20447981"
+  },
+  "firebase-idxdemo4-1750192476708": {
+    "UUID": "d3a15e01-349b-83e5-8bb5-04c103185049",
+    "name": "firebase-idxdemo4-1750192476708",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo4",
+    "workspace": "idxdemo4-69180556"
+  },
+  "firebase-vps04-1746791766540": {
+    "UUID": "b67ba27c-a8c0-4f89-17f8-3b4eed485a48",
+    "name": "firebase-vps04-1746791766540",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxcloud1",
+    "workspace": "vps04-40911876"
+  },
+  "firebase-idxdemo99-1750189061025": {
+    "UUID": "38bd2904-f5da-c30a-05c7-b1490c87584c",
+    "name": "firebase-idxdemo99-1750189061025",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo89",
+    "workspace": "idxdemo99-94969492"
+  },
+  "firebase-idxdeno106-1750192873863": {
+    "UUID": "b10e27e2-80fe-3fde-8850-e373576bfad7",
+    "name": "firebase-idxdeno106-1750192873863",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo106",
+    "workspace": "idxdeno106-06299881"
+  },
+  "firebase-vps02-1746856028836": {
+    "UUID": "4eb73b96-7e45-2bc7-af72-3664180c4dbf",
+    "name": "firebase-vps02-1746856028836",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs8",
+    "workspace": "vps02-88486511"
+  },
+  "firebase-vps02-1746791766968": {
+    "UUID": "6e85b20c-f963-b465-e1d8-9823ef25987f",
+    "name": "firebase-vps02-1746791766968",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxcloud1",
+    "workspace": "vps02-76356987"
+  },
+  "firebase-vps02-1747847453241": {
+    "UUID": "98d46b57-4332-f236-cc94-1f95ac10abc2",
+    "name": "firebase-vps02-1747847453241",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxgcp6",
+    "workspace": "vps02-01162440"
+  },
+  "firebase-vps03-1746805821859": {
+    "UUID": "8fdc18b5-65ef-a96a-621c-ca0a20d3a335",
+    "name": "firebase-vps03-1746805821859",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs1",
+    "workspace": "vps03-76588781"
+  },
+  "firebase-idxdemo99-1750189302369": {
+    "UUID": "d31cc5ac-150a-9e69-4ff9-d6c0d1fcea36",
+    "name": "firebase-idxdemo99-1750189302369",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo99",
+    "workspace": "idxdemo99-80941360"
+  },
+  "idx-vps06-1745346371959": {
+    "UUID": "81e77f50-0df8-8aa9-639c-ab8e4b7b54f8",
+    "name": "idx-vps06-1745346371959",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxgcp06",
+    "workspace": "vps06-25125564"
+  },
+  "firebase-idxdemo101-1750191332762": {
+    "UUID": "cb5ea2b9-d832-91d1-b0ca-de3a584c8aed",
+    "name": "firebase-idxdemo101-1750191332762",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo101",
+    "workspace": "idxdemo101-89047870"
+  },
+  "firebase-vps02-1749717210975": {
+    "UUID": "278c8531-d273-d360-b13e-d49d54d25080",
+    "name": "firebase-vps02-1749717210975",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo55",
+    "workspace": "vps02-99274540"
+  },
+  "firebase-vps01-1746793632845": {
+    "UUID": "c33440e7-c1c2-76fa-3824-f6667c047b7a",
+    "name": "firebase-vps01-1746793632845",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxcloud4",
+    "workspace": "vps01-70455437"
+  },
+  "firebase-vps01-1746793884586": {
+    "UUID": "76631c71-deeb-99ca-7674-8e9c989ca023",
+    "name": "firebase-vps01-1746793884586",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxcloud5",
+    "workspace": "vps01-55241506"
+  },
+  "firebase-vps01-1747847452405": {
+    "UUID": "5520f1e6-af81-be30-51c7-552650699f7c",
+    "name": "firebase-vps01-1747847452405",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxgcp6",
+    "workspace": "vps01-51755324"
+  },
+  "firebase-vps03-1746805218284": {
+    "UUID": "4c475d55-a9e8-0cc0-b372-ce3fa2b87928",
+    "name": "firebase-vps03-1746805218284",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs",
+    "workspace": "vps03-68502938"
+  },
+  "firebase-vps03-1747844419562": {
+    "UUID": "c569dc5c-9169-e1a5-cd31-955f04a5bdbd",
+    "name": "firebase-vps03-1747844419562",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxaz5",
+    "workspace": "vps03-95053378"
+  },
+  "firebase-idxdemo49-1750187276034": {
+    "UUID": "4612bbac-589f-b59d-d491-fd5913e2265b",
+    "name": "firebase-idxdemo49-1750187276034",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo49",
+    "workspace": "idxdemo49-57651987"
+  },
+  "firebase-idxdemo49-1750187275908": {
+    "UUID": "9f81c165-390b-6335-c01b-76a40b90c2e4",
+    "name": "firebase-idxdemo49-1750187275908",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo49",
+    "workspace": "idxdemo49-91748457"
+  },
+  "firebase-vps02-1749718092360": {
+    "UUID": "01a7b236-8eed-aa3f-f475-90559eb54f46",
+    "name": "firebase-vps02-1749718092360",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo54",
+    "workspace": "vps02-36965004"
+  },
+  "firebase-idxdemo102-1750191900894": {
+    "UUID": "563ea9bd-57cd-b36b-4fd0-8c9bce54a2d9",
+    "name": "firebase-idxdemo102-1750191900894",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "idxdemo102",
+    "workspace": "idxdemo102-70454306"
+  },
+  "firebase-vps02-1746805821219": {
+    "UUID": "3b58ea01-fa8a-64af-48cd-8794f9f9ebaa",
+    "name": "firebase-vps02-1746805821219",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-7",
+    "username": "thoainxfs1",
+    "workspace": "vps02-79951379"
+  },
+  "firebase-vps03-1747846628385": {
+    "UUID": "46abc31a-d25d-4c45-dd2a-1a83c715f3bf",
+    "name": "firebase-vps03-1747846628385",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp03",
+    "workspace": "vps03-59819653"
+  },
+  "firebase-idx40-1749757143851": {
+    "UUID": "5fdb216e-2103-c591-f711-4f951e442331",
+    "name": "firebase-idx40-1749757143851",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo40",
+    "workspace": "idx40-24611300"
+  },
+  "firebase-vps02-1748984989151": {
+    "UUID": "f349cd5b-a998-429d-248e-e21a00d5bd1e",
+    "name": "firebase-vps02-1748984989151",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxcloud7",
+    "workspace": "vps02-12879096"
+  },
+  "firebase-vps02-1746809107985": {
+    "UUID": "fe32a399-2b8b-028b-769e-aa12e6ef30cb",
+    "name": "firebase-vps02-1746809107985",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs3",
+    "workspace": "vps02-11607498"
+  },
+  "firebase-vps01-1747844418312": {
+    "UUID": "c79a954b-565c-d2bc-2fda-02ee3a2c4ca2",
+    "name": "firebase-vps01-1747844418312",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxaz5",
+    "workspace": "vps01-27166598"
+  },
+  "firebase-vps02-1747846627861": {
+    "UUID": "97ef193a-702b-383a-d76d-39d7ec7f1df1",
+    "name": "firebase-vps02-1747846627861",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp03",
+    "workspace": "vps02-02036509"
+  },
+  "firebase-idxdeno106-1750192874871": {
+    "UUID": "61aa5010-4f87-5ac6-9e66-1fcc8600ea3f",
+    "name": "firebase-idxdeno106-1750192874871",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo106",
+    "workspace": "idxdeno106-77964038"
+  },
+  "firebase-idxdemo111-1751021053705": {
+    "UUID": "c4deb0bc-2faa-0921-178a-41cc2eb4d5b1",
+    "name": "firebase-idxdemo111-1751021053705",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo111",
+    "workspace": "idxdemo111-33141616"
+  },
+  "firebase-vps03-1746793885388": {
+    "UUID": "0553a422-e47f-95df-0049-3a4ac1ab8785",
+    "name": "firebase-vps03-1746793885388",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxcloud5",
+    "workspace": "vps03-63247920"
+  },
+  "firebase-vps02-1747840576271": {
+    "UUID": "f06ce873-b9d4-523a-ce21-bb79177cf060",
+    "name": "firebase-vps02-1747840576271",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxaz4",
+    "workspace": "vps02-12172507"
+  },
+  "firebase-vps04-1747840577200": {
+    "UUID": "336e78e7-0a1c-396b-4834-87dd204d6553",
+    "name": "firebase-vps04-1747840577200",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxaz4",
+    "workspace": "vps04-28372020"
+  },
+  "firebase-idxdemo99-1750189301093": {
+    "UUID": "76e03c7c-8a38-6beb-7614-7f0f53eda363",
+    "name": "firebase-idxdemo99-1750189301093",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo99",
+    "workspace": "idxdemo99-24014617"
+  },
+  "firebase-idxdemo101-1750191331928": {
+    "UUID": "694a6f0a-f493-fad1-47f4-73cc82e794ba",
+    "name": "firebase-idxdemo101-1750191331928",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo101",
+    "workspace": "idxdemo101-51902746"
+  },
+  "firebase-idxdemo105-1750192538933": {
+    "UUID": "6a0dd4d5-f3f9-7714-da7c-946cbe540b92",
+    "name": "firebase-idxdemo105-1750192538933",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo105",
+    "workspace": "idxdemo105-33443725"
+  },
+  "firebase-idxdemo101-1750191332290": {
+    "UUID": "7dbddaa6-35bf-84da-0191-f228b12011d5",
+    "name": "firebase-idxdemo101-1750191332290",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo101",
+    "workspace": "idxdemo101-23801809"
+  },
+  "firebase-vps03-1747895865648": {
+    "UUID": "069fe74c-4097-a5d4-2660-e6d760b8f0df",
+    "name": "firebase-vps03-1747895865648",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxaz",
+    "workspace": "vps03-73534000"
+  },
+  "firebase-vps01-1746805820757": {
+    "UUID": "ecc6b6ac-ef26-8fa5-84ca-186780711748",
+    "name": "firebase-vps01-1746805820757",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs1",
+    "workspace": "vps01-08628660"
+  },
+  "firebase-vps03-1746853792973": {
+    "UUID": "df3353a8-2920-53ab-f860-16dd74e564ed",
+    "name": "firebase-vps03-1746853792973",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs6",
+    "workspace": "vps03-29467030"
+  },
+  "firebase-idxdemo1010-1750191018222": {
+    "UUID": "dfe2bb9f-1037-faca-9ac5-d4576a08d26d",
+    "name": "firebase-idxdemo1010-1750191018222",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo1010",
+    "workspace": "idxdemo1010-72119263"
+  },
+  "firebase-idx50-1749757143257": {
+    "UUID": "ded5d12d-b232-8aa5-bed3-96a487484cb1",
+    "name": "firebase-idx50-1749757143257",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo50",
+    "workspace": "idx50-72562481"
+  },
+  "firebase-vps02-1746809490456": {
+    "UUID": "a321cca7-5bc5-9eb7-0be9-f6e275364a22",
+    "name": "firebase-vps02-1746809490456",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs4",
+    "workspace": "vps02-42310063"
+  },
+  "firebase-vps03-1749317121684": {
+    "UUID": "e19f2ff9-2da4-4ad2-1912-b2e76c9e531c",
+    "name": "firebase-vps03-1749317121684",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxdelta",
+    "workspace": "vps03-81957420"
+  },
+  "firebase-vps03-1746809491088": {
+    "UUID": "4ebaec9f-1ebd-37a2-79e2-cccd3b9dbbde",
+    "name": "firebase-vps03-1746809491088",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxfs4",
+    "workspace": "vps03-36202463"
+  },
+  "idx-vps07-1745346508221": {
+    "UUID": "5774cc68-40ed-6922-2da7-833cf718ab44",
+    "name": "idx-vps07-1745346508221",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "thoainxgcp06",
+    "workspace": "vps07-88333007"
+  },
+  "firebase-idxdemo1010-1750191017832": {
+    "UUID": "af12aec6-eea0-a23f-47c4-c9c0a1ef50aa",
+    "name": "firebase-idxdemo1010-1750191017832",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-8",
+    "username": "idxdemo1010",
+    "workspace": "idxdemo1010-58558640"
+  },
+  "firebase-idxdemo100-1750190355024": {
+    "UUID": "8fb336ac-1bcd-05ad-38b4-9e6098296c9c",
+    "name": "firebase-idxdemo100-1750190355024",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo100",
+    "workspace": "idxdemo100-35142501"
+  },
+  "firebase-idxdemo79-1750188726883": {
+    "UUID": "4437d9fa-c539-7cf5-07a8-ee3531b472e4",
+    "name": "firebase-idxdemo79-1750188726883",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo79",
+    "workspace": "idxdemo79-08365290"
+  },
+  "firebase-vsp02-1746853791767": {
+    "UUID": "17952e81-c162-d105-c6ac-4d7bd9a2f39e",
+    "name": "firebase-vsp02-1746853791767",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxfs6",
+    "workspace": "vsp02-06321763"
+  },
+  "firebase-idx40-1749757144861": {
+    "UUID": "dfe53b32-7e4f-436f-9832-e9946579c00c",
+    "name": "firebase-idx40-1749757144861",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo40",
+    "workspace": "idx40-25631300"
+  },
+  "firebase-idxdemo103-1750192162199": {
+    "UUID": "5dde0482-eb26-7484-20eb-04872ade0b05",
+    "name": "firebase-idxdemo103-1750192162199",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo103",
+    "workspace": "idxdemo103-92396541"
+  },
+  "firebase-idxdemo103-1750192162438": {
+    "UUID": "4a465182-4d08-5339-83c0-81a5bb92fb4a",
+    "name": "firebase-idxdemo103-1750192162438",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo103",
+    "workspace": "idxdemo103-73924082"
+  },
+  "firebase-idxdemo115-1751021322408": {
+    "UUID": "d30acf45-9aee-f05a-a696-b693bf682f50",
+    "name": "firebase-idxdemo115-1751021322408",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo115",
+    "workspace": "idxdemo115-60813983"
+  },
+  "firebase-vps01-1746791765955": {
+    "UUID": "4f740ba6-9d86-daa2-e561-3f42c2d691ea",
+    "name": "firebase-vps01-1746791765955",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxcloud1",
+    "workspace": "vps01-14642759"
+  },
+  "firebase-vps2-1746806090860": {
+    "UUID": "260a7138-83d3-5ffe-fcea-3faef2223e2c",
+    "name": "firebase-vps2-1746806090860",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxfs2",
+    "workspace": "vps2-65265905"
+  },
+  "firebase-idxdemo4-1750192477597": {
+    "UUID": "659dba84-7cd4-adb7-76c8-3d7b7fa070db",
+    "name": "firebase-idxdemo4-1750192477597",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo4",
+    "workspace": "idxdemo4-95839785"
+  },
+  "firebase-vps01-1746853791483": {
+    "UUID": "25d58a00-5beb-06e3-19f1-3f3fc2fda06f",
+    "name": "firebase-vps01-1746853791483",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxfs6",
+    "workspace": "vps01-49703279"
+  },
+  "firebase-vps01-1746856028270": {
+    "UUID": "d17bd5b0-0fa8-d8b0-2a52-c848a2e4e41c",
+    "name": "firebase-vps01-1746856028270",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxfs8",
+    "workspace": "vps01-65869725"
+  },
+  "firebase-idxdemo59-1750187715576": {
+    "UUID": "45cb2a88-e053-0ff2-cdca-e42994410a64",
+    "name": "firebase-idxdemo59-1750187715576",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo59",
+    "workspace": "idxdemo59-63944677"
+  },
+  "firebase-idxdemo114-1751022582102": {
+    "UUID": "ed506bb0-e1d0-d4e9-7514-1895bdf53795",
+    "name": "firebase-idxdemo114-1751022582102",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo114",
+    "workspace": "idxdemo114-45519973"
+  },
+  "firebase-vps02-1749718488613": {
+    "UUID": "7836604b-4918-0e34-a1f5-e9367631a060",
+    "name": "firebase-vps02-1749718488613",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo64",
+    "workspace": "vps02-00189990"
+  },
+  "firebase-vps03-1746793633852": {
+    "UUID": "7753ffc4-d5ec-59a2-1ab9-8836a4245456",
+    "name": "firebase-vps03-1746793633852",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxcloud4",
+    "workspace": "vps03-46187470"
+  },
+  "firebase-vps03-1749718489609": {
+    "UUID": "44d56d3b-fcd0-a2d8-0aec-64f629e074c9",
+    "name": "firebase-vps03-1749718489609",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "idxdemo64",
+    "workspace": "vps03-80839172"
+  },
+  "firebase-vps01-1747844922605": {
+    "UUID": "571972a2-e858-d8b7-03dc-e45adeb72b0b",
+    "name": "firebase-vps01-1747844922605",
+    "zone": "us-east4",
+    "projectid": "312045414151",
+    "clusterid": "workstation-cluster-10",
+    "username": "thoainxgcp04",
+    "workspace": "vps01-78497553"
+  }
+}
