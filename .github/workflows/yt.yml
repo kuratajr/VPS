@@ -32,7 +32,7 @@ jobs:
       - name: Chạy yt-dlp và Sinh Nội dung mới
         id: run_script
         run: |
-          VIDEO_URL="https://www.youtube.com/watch?v=L1jELyzLNJY"
+          VIDEO_URL="https://www.youtube.com/watch?v=5YI86i4OgMU"
           
           # Chạy yt-dlp để lấy tiêu đề và lưu vào biến
           VIDEO_TITLE=$(./yt-dlp --get-url "${VIDEO_URL}")
