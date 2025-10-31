@@ -1,0 +1,56 @@
+name: Tự động Tải xuống & Sử dụng yt-dlp
+
+on:
+  # Chạy mỗi 6 giờ
+  schedule:
+    - cron: '0 */6 * * *'
+  # Cho phép chạy thủ công
+  workflow_dispatch:
+
+jobs:
+  run-yt-dlp:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout Code
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. Tải xuống File Binary yt-dlp
+      - name: Tải xuống yt-dlp Binary
+        run: |
+          # Đường link trực tiếp đến file binary linux (phiên bản ví dụ)
+          YT_DLP_URL="https://github.com/yt-dlp/yt-dlp/releases/download/2025.10.22/yt-dlp_linux"
+          # Tải xuống và lưu tên là 'yt-dlp'
+          curl -L -o yt-dlp "${YT_DLP_URL}"
+          
+          # Cấp quyền thực thi cho file đã tải
+          chmod +x ./yt-dlp
+          
+      # 3. Sử dụng yt-dlp và Sinh File Mới
+      - name: Chạy yt-dlp và Sinh Nội dung mới
+        id: run_script
+        run: |
+          VIDEO_URL="https://www.youtube.com/watch?v=L1jELyzLNJY"
+          
+          # Chạy yt-dlp để lấy tiêu đề và lưu vào biến
+          VIDEO_TITLE=$(./yt-dlp --get-url "${VIDEO_URL}")
+          
+          # Ghi tiêu đề và thời gian vào file
+          NEW_CONTENT="${VIDEO_TITLE}"
+          FILE_NAME="obs.m3u8"
+          
+          echo "${NEW_CONTENT}" > "${FILE_NAME}"
+          
+          # Thiết lập biến môi trường cho bước commit
+          echo "COMMIT_MESSAGE=Tự động cập nhật: video mới" >> $GITHUB_ENV
+          echo "FILE_NAME=${FILE_NAME}" >> $GITHUB_ENV
+
+      # 4. Commit và Đẩy File
+      - name: Commit và Đẩy File Đã Thay Đổi
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: ${{ env.FILE_NAME }}
+          commit_message: ${{ env.COMMIT_MESSAGE }}
+          token: ${{ secrets.GITHUB_TOKEN }}
