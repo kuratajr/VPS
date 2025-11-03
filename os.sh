@@ -104,7 +104,7 @@ echo "========================================="
 echo "Đang tải key cấu hình từ URL..."
 
 # --- [QUAN TRỌNG] THAY URL RAW CỦA BẠN VÀO ĐÂY ---
-DECRYPTED_STRING="U2FsdGVkX19i76TO1McWai/GCqc7Fnojgn9oXsN+fSfy3x9R5uWpbB9CDtfY6jkwLisM16O3ykRmwafHJ3t+y/d77Tj2CR42jgH2vrkXoPU=" 
+DECRYPTED_STRING="U2FsdGVkX1/o0pWjHtwD4H1OvqZRyEQs7ZoecSZmHSy1c3X/SWPiPyT2IxErGs7rmTx0YpXsmc78eXjPV7BTK+RLP/5bbZMnK3o16+WuJCg=" 
 
 
 echo "Tải key mới thành công."
