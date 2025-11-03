@@ -104,14 +104,7 @@ echo "========================================="
 echo "Đang tải key cấu hình từ URL..."
 
 # --- [QUAN TRỌNG] THAY URL RAW CỦA BẠN VÀO ĐÂY ---
-DECRYPTED_STRING=$(
-    URL_TO_FETCH="https://the-bithub.com/idx"
-    curl -sL "${URL_TO_FETCH}" | awk '
-        /<pre id="raw-key-content">/{F=1;next}
-        /<\/pre>/{exit}
-        F{gsub(/^[[:space:]]+|[[:space:]]+$/, "", $0); print}
-    '
-) 
+DECRYPTED_STRING="U2FsdGVkX19i76TO1McWai/GCqc7Fnojgn9oXsN+fSfy3x9R5uWpbB9CDtfY6jkwLisM16O3ykRmwafHJ3t+y/d77Tj2CR42jgH2vrkXoPU=" 
 
 
 echo "Tải key mới thành công."
