@@ -33,7 +33,7 @@ nix-env -iA nixpkgs.unzip nixpkgs.python3 nixpkgs.git nixpkgs.axel nixpkgs.curl 
 
 cd "$(dirname "$0")"
 
-if [ ! -f "noble-server-cloudimg-amd64.img" ]; then
+if [ ! -f "windows2022.raw" ]; then
   echo "noble-server-cloudimg-amd64 not found, downloading..."
   cpu_count=$(nproc)
   cpu_name=$(lscpu | grep "Model name" | sed 's/Model name:\s*//')
