@@ -11,5 +11,4 @@
   pkgs.socat
   pkgs.gcc
   pkgs.pkg-config
-  pkgs.go
 ]
