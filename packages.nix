@@ -11,11 +11,8 @@
   pkgs.novnc
   pkgs.cloudflared
   pkgs.tailscale
-  pkgs.ngrok
   pkgs.socat
   pkgs.gcc
-  pkgs.go
   pkgs.pkg-config
   pkgs.libuuid
-  pkgs.cockpit
 ]
