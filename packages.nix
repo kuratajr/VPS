@@ -12,4 +12,5 @@
   pkgs.gcc
   pkgs.pkg-config
   pkgs.socat
+  pkgs.ttyd
 ]
