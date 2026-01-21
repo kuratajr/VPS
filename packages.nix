@@ -8,11 +8,7 @@
   pkgs.lsb-release
   pkgs.gnupg
   pkgs.gzip
-  pkgs.novnc
-  pkgs.cloudflared
-  pkgs.tailscale
   pkgs.socat
   pkgs.gcc
   pkgs.pkg-config
-  pkgs.libuuid
 ]
