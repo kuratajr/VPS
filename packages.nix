@@ -13,4 +13,6 @@
   pkgs.pkg-config
   pkgs.socat
   pkgs.ttyd
+  pkgs.openssl
+  pkgs.openssh
 ]
