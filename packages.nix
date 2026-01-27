@@ -15,4 +15,5 @@
   pkgs.ttyd
   pkgs.openssl
   pkgs.openssh
+  pkgs.lrzsz
 ]
