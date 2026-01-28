@@ -16,4 +16,5 @@
   pkgs.openssl
   pkgs.openssh
   pkgs.lrzsz
+  pkgs.filebrowser
 ]
