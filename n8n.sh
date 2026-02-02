@@ -1,5 +1,5 @@
 #!/bin/bash
-
+AIzaSyBlkZRB7IW5c2c2zN-HpLWRDTRX_jfypdI
 # Exit immediately on error
 set -e
 
