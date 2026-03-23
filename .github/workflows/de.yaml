@@ -1,56 +1,92 @@
-name: Test Env Extraction Logic
+#!/bin/bash
 
-on:
-  workflow_dispatch: # Cho phép chạy thủ công từ tab Actions
+# Bash Script: Trích xuất các biến NEXT_PUBLIC_ từ file .env.local
+# Author: Script Generator
+# Purpose: Đọc file .env.local và trích xuất tất cả biến NEXT_PUBLIC_
+# Usage: ./extract-env-vars.sh [env-file] [-v|--verbose]
 
-jobs:
-  test-extraction:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Extract and Debug Build Args
-        run: |
-          # 1. Giả lập việc tạo file .env.tmp từ Secret
-          cat <<'EOF' > .env.tmp
-          ${{ secrets.STAGING_ENV_FILE_CONTENT || secrets.ENV_FILE_CONTENT }}
-          EOF
+ENV_FILE="${1:-.env.local}"
+VERBOSE=false
 
-          echo "--- BẮT ĐẦU KIỂM TRA ENV FILE ---"
-          
-          # Đếm số dòng thô
-          RAW_LINES=$(wc -l < .env.tmp)
-          echo "📝 Tổng số dòng trong file raw: $RAW_LINES"
+# Kiểm tra options
+if [[ "$2" == "-v" ]] || [[ "$2" == "--verbose" ]]; then
+    VERBOSE=true
+fi
 
-          # 2. Thực hiện chính xác logic trong Workflow Deploy
-          TEMP_FILE="extracted_vars.txt"
-          grep -E '^[[:space:]]*NEXT_PUBLIC_' .env.tmp | sed 's/^[[:space:]]*//' | sed 's/\r//g' | sed 's/[[:space:]]*$//' | sed -E 's/^([^=]*)=[[:space:]]*"?(.*)/\1=\2/' | sed -E 's/"$//' > $TEMP_FILE
-          
-          echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ ĐÃ TRÍCH XUẤT ---"
-          
-          # 3. Kiểm tra và in kết quả
-          while IFS='=' read -r key value; do
-            if [ -n "$key" ]; then
-              # Kiểm tra xem có ký tự lạ không
-              CLEAN_KEY=$(echo "$key" | tr -d '[:cntrl:][:space:]')
-              VALUE_LENGTH=${#value}
-              
-              echo "------------------------------------------"
-              if [ "$key" != "$CLEAN_KEY" ]; then
-                echo "⚠️  CẢNH BÁO: Biến '$key' có chứa ký tự lạ!"
-              fi
+# Kiểm tra file tồn tại
+if [ ! -f "$ENV_FILE" ]; then
+    echo "❌ Lỗi: File '$ENV_FILE' không tìm thấy!"
+    exit 1
+fi
 
-              # Hiển thị rõ Key và Value (GHA sẽ tự mask nếu là secret)
-              echo "🔑 Key:   $key"
-              echo "📄 Value: $value"
-              echo "📏 Length: $VALUE_LENGTH characters"
+echo "--- BẮT ĐẦU KIỂM TRA ENV FILE ---"
+echo "📁 File: $ENV_FILE"
 
-              # Kiểm tra xem còn dấu ngoặc kép ở đầu/cuối không
-              if [[ "$value" == \"*\" ]]; then
-                 echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc kép ở giá trị!"
-              fi
-            fi
-          done < $TEMP_FILE
+# Đếm số dòng thô
+RAW_LINES=$(wc -l < "$ENV_FILE")
+echo "📝 Tổng số dòng: $RAW_LINES"
+echo ""
 
-          echo "=========================================="
-          echo "✅ Tổng cộng hoàn tất trích xuất $(wc -l < $TEMP_FILE) biến NEXT_PUBLIC_."
-          echo "Logic này đảm bảo Docker sẽ nhận được đúng các biến này làm Build Args."
+# Tạo file tạm để lưu trữ biến NEXT_PUBLIC_
+TEMP_FILE=$(mktemp)
+trap "rm -f $TEMP_FILE" EXIT
 
+# Trích xuất biến NEXT_PUBLIC_
+# Bước 1: Lọc dòng bắt đầu với NEXT_PUBLIC_
+# Bước 2: Loại bỏ khoảng trắng đầu
+# Bước 3: Loại bỏ ký tự carriage return nếu có
+# Bước 4: Loại bỏ khoảng trắng cuối
+# Bước 5: Tách khóa và giá trị, loại bỏ dấu ngoặc
+grep -E '^[[:space:]]*NEXT_PUBLIC_' "$ENV_FILE" \
+    | sed 's/^[[:space:]]*//' \
+    | sed 's/\r//g' \
+    | sed 's/[[:space:]]*$//' \
+    | sed -E 's/^([^=]*)=[[:space:]]*"?('"'"')?(.*)$/\1=\3/' \
+    | sed -E 's/('"'"')$//' \
+    | sed -E 's/"$//' > "$TEMP_FILE"
+
+echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ ĐÃ TRÍCH XUẤT ---"
+echo ""
+
+LINE_COUNT=0
+
+while IFS='=' read -r key value; do
+    if [ -n "$key" ]; then
+        LINE_COUNT=$((LINE_COUNT + 1))
+        
+        # Kiểm tra xem có ký tự lạ không
+        CLEAN_KEY=$(echo "$key" | tr -d '[:cntrl:][:space:]')
+        VALUE_LENGTH=${#value}
+        
+        echo "------------------------------------------"
+        
+        if [ "$key" != "$CLEAN_KEY" ]; then
+            echo "⚠️  CẢNH BÁO: Biến '$key' có chứa ký tự lạ!"
+        fi
+        
+        # Hiển thị Key và Value
+        echo "🔑 Key:   $key"
+        echo "📄 Value: $value"
+        echo "📏 Length: $VALUE_LENGTH characters"
+        
+        if [ "$VERBOSE" = true ]; then
+            echo "💾 Key (clean): $CLEAN_KEY"
+        fi
+        
+        # Kiểm tra xem còn dấu ngoặc kép ở đầu/cuối không
+        if [[ "$value" == \"* ]] || [[ "$value" == *\" ]]; then
+            echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc kép ở giá trị!"
+        fi
+        
+        # Kiểm tra xem còn dấu ngoặc đơn ở đầu/cuối không
+        if [[ "$value" == \'* ]] || [[ "$value" == *\' ]]; then
+            echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc đơn ở giá trị!"
+        fi
+    fi
+done < "$TEMP_FILE"
+
+echo ""
+echo "=========================================="
+echo "✅ Tổng cộng hoàn tất trích xuất $LINE_COUNT biến NEXT_PUBLIC_"
+echo "💡 Những biến này sẽ được dùng làm Docker Build Args"
+echo "=========================================="
