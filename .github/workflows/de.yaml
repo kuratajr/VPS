@@ -14,37 +14,43 @@ jobs:
           ${{ secrets.STAGING_ENV_FILE_CONTENT || secrets.ENV_FILE_CONTENT }}
           EOF
 
-          echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ TÌM THẤY ---"
+          echo "--- BẮT ĐẦU KIỂM TRA ENV FILE ---"
           
+          # Đếm số dòng thô
+          RAW_LINES=$(wc -l < .env.tmp)
+          echo "📝 Tổng số dòng trong file raw: $RAW_LINES"
+
           # 2. Thực hiện chính xác logic trong Workflow Deploy
-          # - Lọc NEXT_PUBLIC_
-          # - Xóa ký tự \r
-          # - Xóa khoảng trắng đầu/cuối
-          # - Xóa dấu ngoặc kép "" bao quanh giá trị
-          
           TEMP_FILE="extracted_vars.txt"
           grep -E '^[[:space:]]*NEXT_PUBLIC_' .env.tmp | sed 's/^[[:space:]]*//' | sed 's/\r//g' | sed 's/[[:space:]]*$//' | sed -E 's/^([^=]*)=[[:space:]]*"?(.*)"?[[:space:]]*$/\1=\2/' > $TEMP_FILE
           
-          # 3. Kiểm tra và in kết quả (ẨN GIÁ TRỊ ĐỂ BẢO MẬT)
+          echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ ĐÃ TRÍCH XUẤT ---"
+          
+          # 3. Kiểm tra và in kết quả
           while IFS='=' read -r key value; do
             if [ -n "$key" ]; then
               # Kiểm tra xem có ký tự lạ không
               CLEAN_KEY=$(echo "$key" | tr -d '[:cntrl:][:space:]')
               VALUE_LENGTH=${#value}
               
+              echo "------------------------------------------"
               if [ "$key" != "$CLEAN_KEY" ]; then
-                echo "⚠️ CẢNH BÁO: Biến '$key' có chứa ký tự lạ!"
-              else
-                # Kiểm tra xem còn dấu ngoặc kép ở đầu/cuối không
-                if [[ "$value" == \"*\" ]]; then
-                   echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc kép!"
-                else
-                   echo "✅ Đã tìm thấy: $key (Độ dài giá trị: $VALUE_LENGTH ký tự)"
-                fi
+                echo "⚠️  CẢNH BÁO: Biến '$key' có chứa ký tự lạ!"
+              fi
+
+              # Hiển thị rõ Key và Value (GHA sẽ tự mask nếu là secret)
+              echo "🔑 Key:   $key"
+              echo "📄 Value: $value"
+              echo "📏 Length: $VALUE_LENGTH characters"
+
+              # Kiểm tra xem còn dấu ngoặc kép ở đầu/cuối không
+              if [[ "$value" == \"*\" ]]; then
+                 echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc kép ở giá trị!"
               fi
             fi
           done < $TEMP_FILE
 
-          echo "------------------------------------------"
-          echo "Tổng cộng tìm thấy $(wc -l < $TEMP_FILE) biến NEXT_PUBLIC_."
-          echo "Logic này đảm bảo Docker sẽ nhận được đúng các biến này làm Build Args (không bị dính ngoặc kép)."
+          echo "=========================================="
+          echo "✅ Tổng cộng hoàn tất trích xuất $(wc -l < $TEMP_FILE) biến NEXT_PUBLIC_."
+          echo "Logic này đảm bảo Docker sẽ nhận được đúng các biến này làm Build Args."
+
