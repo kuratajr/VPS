@@ -2,8 +2,6 @@ name: Tự động Tải xuống & Sử dụng yt-dlp
 
 on:
   # Chạy mỗi 6 giờ
-  schedule:
-    - cron: '0 */6 * * *'
   # Cho phép chạy thủ công
   workflow_dispatch:
 
