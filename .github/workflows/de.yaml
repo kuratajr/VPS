@@ -22,7 +22,7 @@ jobs:
 
           # 2. Thực hiện chính xác logic trong Workflow Deploy
           TEMP_FILE="extracted_vars.txt"
-          grep -E '^[[:space:]]*NEXT_PUBLIC_' .env.tmp | sed 's/^[[:space:]]*//' | sed 's/\r//g' | sed 's/[[:space:]]*$//' | sed -E 's/^([^=]*)=[[:space:]]*"?(.*)"?[[:space:]]*$/\1=\2/' > $TEMP_FILE
+          grep -E '^[[:space:]]*NEXT_PUBLIC_' .env.tmp | sed 's/^[[:space:]]*//' | sed 's/\r//g' | sed 's/[[:space:]]*$//' | sed -E 's/^([^=]*)=[[:space:]]*"?(.*)/\1=\2/' | sed -E 's/"$//' > $TEMP_FILE
           
           echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ ĐÃ TRÍCH XUẤT ---"
           
