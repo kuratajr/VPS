@@ -1,0 +1,50 @@
+name: Test Env Extraction Logic
+
+on:
+  workflow_dispatch: # Cho phép chạy thủ công từ tab Actions
+
+jobs:
+  test-extraction:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract and Debug Build Args
+        run: |
+          # 1. Giả lập việc tạo file .env.tmp từ Secret
+          cat <<'EOF' > .env.tmp
+          ${{ secrets.STAGING_ENV_FILE_CONTENT || secrets.ENV_FILE_CONTENT }}
+          EOF
+
+          echo "--- DANH SÁCH BIẾN NEXT_PUBLIC_ TÌM THẤY ---"
+          
+          # 2. Thực hiện chính xác logic trong Workflow Deploy
+          # - Lọc NEXT_PUBLIC_
+          # - Xóa ký tự \r
+          # - Xóa khoảng trắng đầu/cuối
+          # - Xóa dấu ngoặc kép "" bao quanh giá trị
+          
+          TEMP_FILE="extracted_vars.txt"
+          grep -E '^[[:space:]]*NEXT_PUBLIC_' .env.tmp | sed 's/^[[:space:]]*//' | sed 's/\r//g' | sed 's/[[:space:]]*$//' | sed -E 's/^([^=]*)=[[:space:]]*"?(.*)"?[[:space:]]*$/\1=\2/' > $TEMP_FILE
+          
+          # 3. Kiểm tra và in kết quả (ẨN GIÁ TRỊ ĐỂ BẢO MẬT)
+          while IFS='=' read -r key value; do
+            if [ -n "$key" ]; then
+              # Kiểm tra xem có ký tự lạ không
+              CLEAN_KEY=$(echo "$key" | tr -d '[:cntrl:][:space:]')
+              VALUE_LENGTH=${#value}
+              
+              if [ "$key" != "$CLEAN_KEY" ]; then
+                echo "⚠️ CẢNH BÁO: Biến '$key' có chứa ký tự lạ!"
+              else
+                # Kiểm tra xem còn dấu ngoặc kép ở đầu/cuối không
+                if [[ "$value" == \"*\" ]]; then
+                   echo "❌ LỖI: Biến $key vẫn còn dấu ngoặc kép!"
+                else
+                   echo "✅ Đã tìm thấy: $key (Độ dài giá trị: $VALUE_LENGTH ký tự)"
+                fi
+              fi
+            fi
+          done < $TEMP_FILE
+
+          echo "------------------------------------------"
+          echo "Tổng cộng tìm thấy $(wc -l < $TEMP_FILE) biến NEXT_PUBLIC_."
+          echo "Logic này đảm bảo Docker sẽ nhận được đúng các biến này làm Build Args (không bị dính ngoặc kép)."
