@@ -17,4 +17,6 @@
   pkgs.openssh
   pkgs.lrzsz
   pkgs.filebrowser
+  pkgs.python3
+  pkgs.libuuid
 ]
