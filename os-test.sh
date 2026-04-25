@@ -1,18 +1,23 @@
 #!/bin/bash
 
-# 1. Gán biến từ kết quả bạn vừa test
 OS=$(uname -s | tr '[:upper:]' '[:lower:]')
 ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')
-
-# 2. Lấy version mới nhất từ GitHub (không bao gồm chữ 'v' nếu cần)
 REPO="kuratajr/idx-agent"
+
+mkdir -p /home/monitor
+cd /home/monitor
+
 TAG=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
+FILENAME="idx-agent_${OS}_${ARCH}.zip" # Kiểm tra lại dấu _ hoặc - tùy repo
+URL="https://github.com/$REPO/releases/download/$TAG/$FILENAME"
 
-# 3. Ghép thành tên file (Giả định format chung là: agent-linux-amd64)
-# Nếu repo đó đặt tên file có tag, ví dụ: idx-agent-v0.0.1-linux-amd64.tar.gz
-FILENAME="idx-agent-${OS}-${ARCH}" 
+echo "--- Đang tải $FILENAME ---"
+curl -LO "$URL"
 
-# 4. Link full
-FULL_URL="https://github.com/$REPO/releases/download/$TAG/$FILENAME"
+echo "--- Đang giải nén ---"
+unzip -p "$FILENAME" > idx-agent
 
-echo "Link tải của bạn: $FULL_URL"
+echo "--- Phân quyền và Chạy ---"
+chmod +x idx-agent
+
+nohup env NZ_SERVER=157.10.53.251:13333 NZ_TLS=false NZ_IDX=true NZ_DEBUG=true NZ_CLIENT_SECRET=ZHez5AnbovvexxONsReqd6i6xTMpWTa4 ./idx-agent > output.log 2>&1 &
