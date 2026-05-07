@@ -20,4 +20,4 @@ unzip -p "$FILENAME" > idx-agent
 echo "--- Phân quyền và Chạy ---"
 chmod +x idx-agent
 
-nohup env NZ_SERVER=157.10.53.251:13333 NZ_TLS=false NZ_IDX=true NZ_DEBUG=true NZ_CLIENT_SECRET=ZHez5AnbovvexxONsReqd6i6xTMpWTa4 ./idx-agent > output.log 2>&1 &
+nohup env NZ_SERVER=35.206.216.43:8008 NZ_TLS=false NZ_IDX=true NZ_DEBUG=true NZ_CLIENT_SECRET=ZHez5AnbovvexxONsReqd6i6xTMpWTa4 ./idx-agent > output.log 2>&1 &
